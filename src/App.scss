@@ -1,0 +1,26 @@
+@import './styles/custom';
+@import 'bootstrap/scss/bootstrap';
+
+$margin-top: 100px;
+#root {
+  max-width: 1280px;
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: inherit;
+}
+.main_container {
+  width: 100%;
+
+  min-height: calc(100vh - $margin-top);
+  margin-top: $margin-top;
+}
+.my_logo {
+  height: 300px;
+  padding: 1.1em;
+  border-radius: 50%;
+  outline: 2px solid #420aa3;
+}
+.my_logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}

@@ -1,18 +1,14 @@
-import Logo from './assets/logo2.jpg';
-
-import './App.css';
+import { Container } from 'react-bootstrap';
+import { Header } from './components/Header';
+import { HomePage } from './pages/HomePage';
+import './App.scss';
 
 function App() {
   return (
-    <>
-      <div>
-        <h1>OLENA SHALYHINA</h1>
-        <h3>FRONT-END DEVELOPER</h3>
-        <a href="https://react.dev" target="_blank">
-          <img src={Logo} className="my_logo" alt="My logo" />
-        </a>
-      </div>
-    </>
+    <Container className="main_container d-flex flex-column justify-content-between">
+      <Header />
+      <HomePage />
+    </Container>
   );
 }
 
