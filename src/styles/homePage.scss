@@ -1,12 +1,14 @@
 .home_section {
-  min-height: 86vh;
-}
+  // min-height: 60vh;
 
-.home_discription {
-  margin-top: 50px;
-}
-.home_img {
-  width: 200px;
-  height: 255px;
-  border: 2px solid #7e45ee;
+  .home_discription {
+    margin-top: 50px;
+    border: 2px solid #7e45ee;
+    border-radius: 5px;
+    .home_img {
+      width: 200px;
+      height: 255px;
+      // transform: rotate(-0.05turn);
+    }
+  }
 }
