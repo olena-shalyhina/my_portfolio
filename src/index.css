@@ -9,8 +9,8 @@ html {
   font-weight: 400;
 
   /* color-scheme: light dark; */
-  /* color: red;
-  background-color: #0b0a0a; */
+  /* color: red;*/
+  /* background-image: url('../src/assets/4562023-hd_1040_1848_30fps.mp4'); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -48,6 +48,14 @@ body {
   min-height: 100vh;
   background-color: #020010;
   box-sizing: border-box;
+
+  /* background: rgb(128, 64, 181); */
+  /* background: linear-gradient(
+    225deg,
+    rgba(128, 64, 181, 1) 22%,
+    rgba(233, 106, 7, 0.6896008403361344) 53%,
+    rgba(83, 124, 242, 0.9977240896358543) 82%
+  ); */
 }
 
 h1 {
