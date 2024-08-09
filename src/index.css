@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
 }
 
 :root {
@@ -12,10 +11,10 @@ html {
   /* color-scheme: light dark; */
   /* background: url('../src/assets/contact.jpg'); */
 
-  font-synthesis: none;
+  /* font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;*/
 }
 
 a {

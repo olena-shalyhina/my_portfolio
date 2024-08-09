@@ -1,14 +1,22 @@
-.home_section {
-  // min-height: 60vh;
-
-  .home_discription {
-    margin-top: 50px;
-    border: 2px solid #7e45ee;
-    border-radius: 5px;
-    .home_img {
-      width: 200px;
-      height: 255px;
-      // transform: rotate(-0.05turn);
-    }
+.home_discription {
+  margin-top: 50px;
+  border: 2px solid #7e45ee;
+  border-radius: 5px;
+  .home_img {
+    width: 200px;
+    height: 255px;
   }
 }
+
+.my_logo {
+  height: 320px;
+  width: 320px;
+  padding: 1.1em;
+  border-radius: 50%;
+  outline: 2px solid #420aa3;
+  overflow: hidden;
+  filter: drop-shadow(0 0 4em #646cffaa);
+}
+// .my_logo:hover {
+//   filter: drop-shadow(0 0 4em #646cffaa);
+// }

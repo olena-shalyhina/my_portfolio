@@ -2,7 +2,7 @@ import { Container } from 'react-bootstrap';
 import { Header } from './components/Header';
 import { HomePage } from './pages/HomePage';
 import './App.scss';
-import { Copyright } from './pages/Copyright';
+import { Copyright } from './components/Copyright';
 
 function App() {
   return (
