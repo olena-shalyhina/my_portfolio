@@ -6,7 +6,7 @@ import monitor from '../assets/monitor.jpg';
 
 export const HomePage: FC = () => {
   return (
-    <section className="home_section row text-info mt-2 mx-2">
+    <section className="home_section row text-info mt-2 mx-1">
       <div className="home_discription col-md-12 col-lg-3   d-flex flex-column flex-md-row flex-lg-column  align-items-center justify-content-around order-2 order-lg-1    px-1 ">
         <img
           className="home_img m-3"

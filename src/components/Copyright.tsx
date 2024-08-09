@@ -8,7 +8,7 @@ export const Copyright: FC = () => {
     bg-dark text-saccesful "
     >
       <Socials />
-      <div className="text-center border-2 border-info py-2">
+      <div className="text-center border-2 border-info py-1">
         &copy; Copyright "My portfolio" 2024
       </div>
     </div>
