@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 :root {
@@ -72,6 +73,9 @@ h3 {
   color: #f36524eb;
 }
 
+ul {
+  list-style: none;
+}
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

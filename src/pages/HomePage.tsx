@@ -3,11 +3,12 @@ import logo from '../assets/logo.jpg';
 import '../styles/HomePage.scss';
 import myPhoto from '../assets/my-photo.jpg';
 import monitor from '../assets/monitor.jpg';
+import { Socials } from '../components/Socials';
 
 export const HomePage: FC = () => {
   return (
-    <section className="home_section row text-info mt-2 mx-1">
-      <div className="home_discription col-md-12 col-lg-3   d-flex flex-column flex-md-row flex-lg-column  align-items-center justify-content-around order-2 order-lg-1    px-1 ">
+    <section className="home_section row text-info mt-3 mx-1">
+      <div className="home_discription col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column  align-items-center justify-content-around order-2 order-lg-1 px-1 ">
         <img
           className="home_img m-3"
           src={myPhoto}
@@ -40,8 +41,9 @@ export const HomePage: FC = () => {
         <a className="logo_container" href="" target="_blank">
           <img src={logo} className="my_logo" alt="My logo" />
         </a>
+        <Socials />
       </div>
-      <div className="home_discription col-md-12 col-lg-3 d-flex  flex-column flex-md-row flex-lg-column align-items-center  justify-content-around order-3 border border-saccesful rounded  px-1 ">
+      <div className="home_discription col-md-12 col-lg-3 d-flex  flex-column flex-md-row flex-lg-column align-items-center  justify-content-around order-3  px-1 ">
         <p className="p-3">
           Able to work independently and coordinate with other team members and
           stakeholders to effectively complete assigned tasks. I have an
