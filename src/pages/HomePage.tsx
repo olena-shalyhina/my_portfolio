@@ -7,7 +7,7 @@ import { Socials } from '../components/Socials';
 
 export const HomePage: FC = () => {
   return (
-    <section className="home_section row text-info mt-3 mx-1">
+    <section className="home_section row text-info mt-4 mx-1">
       <div className="home_discription col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column  align-items-center justify-content-around order-2 order-lg-1 px-1 ">
         <img
           className="home_img m-3"
@@ -25,7 +25,7 @@ export const HomePage: FC = () => {
           convenient and intuitive UI, adapted for tablet and mobile devices.
         </p>
       </div>
-      <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2  gap-4 ">
+      <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2  gap-4">
         <h1>
           <span className="text-saccesful">Hi! I`m </span>
           <br />

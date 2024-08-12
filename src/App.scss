@@ -1,16 +1,16 @@
 @import './styles/custom';
 @import 'bootstrap/scss/bootstrap';
 
-$margin-top: 60px;
+$navbar-height: 60px;
 #root {
-  max-width: 1320px;
   width: 1320px;
+  max-width: 1320px;
   margin: 0 auto;
   text-align: center;
   background-color: inherit;
 }
 .main_container {
   width: 100%;
-  min-height: calc(100vh - $margin-top);
-  margin-top: $margin-top;
+  min-height: calc(100vh - $navbar-height);
+  margin-top: $navbar-height;
 }

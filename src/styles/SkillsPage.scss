@@ -1,0 +1,15 @@
+.skills_wrapper {
+  min-height: 40em;
+  border-radius: 10px;
+  background: linear-gradient(
+    225deg,
+    rgba(128, 64, 181, 1) 22%,
+    rgba(233, 106, 7, 0.6896008403361344) 53%,
+    rgba(83, 124, 242, 0.9977240896358543) 82%
+  );
+  .skill_box {
+    height: 60px;
+    min-width: 320px;
+    border-radius: 20px;
+  }
+}
