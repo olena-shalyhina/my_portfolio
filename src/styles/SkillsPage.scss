@@ -1,5 +1,38 @@
-.skills_wrapper {
-  min-height: 40em;
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.skill_ikons_wrapper {
+  margin: 20px auto;
+
+  overflow: hidden;
+
+  div {
+    width: 200%;
+    animation: marquee 10s linear infinite;
+    display: flex;
+
+    span {
+      width: 100%;
+      display: block;
+      display: flex;
+      justify-content: space-around;
+
+      img {
+        width: 10%;
+        padding-top: 5px;
+      }
+    }
+  }
+}
+
+.skills_list_wrapper {
+  min-height: 26em;
+
   border-radius: 10px;
   background: linear-gradient(
     225deg,
@@ -8,8 +41,8 @@
     rgba(83, 124, 242, 0.9977240896358543) 82%
   );
   .skill_box {
-    height: 60px;
-    min-width: 320px;
+    height: 40px;
+    min-width: 280px;
     border-radius: 20px;
   }
 }
