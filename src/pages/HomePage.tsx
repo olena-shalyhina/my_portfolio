@@ -3,7 +3,6 @@ import logo from '../assets/logo.jpg';
 import '../styles/HomePage.scss';
 import myPhoto from '../assets/my-photo.jpg';
 import monitor from '../assets/monitor.jpg';
-import { Socials } from '../components/Socials';
 
 export const HomePage: FC = () => {
   return (
@@ -25,7 +24,7 @@ export const HomePage: FC = () => {
           convenient and intuitive UI, adapted for tablet and mobile devices.
         </p>
       </div>
-      <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2  gap-4">
+      <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2 mb-5 gap-4">
         <h1>
           <span className="text-saccesful">Hi! I`m </span>
           <br />
@@ -41,7 +40,6 @@ export const HomePage: FC = () => {
         <a className="logo_container" href="" target="_blank">
           <img src={logo} className="my_logo" alt="My logo" />
         </a>
-        <Socials />
       </div>
       <div className="home_discription col-md-12 col-lg-3 d-flex  flex-column flex-md-row flex-lg-column align-items-center  justify-content-around order-3  px-1 ">
         <p className="p-3">

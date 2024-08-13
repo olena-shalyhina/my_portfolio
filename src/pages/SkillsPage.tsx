@@ -36,7 +36,7 @@ export const SkillsPage: FC = () => {
   const icons = [react, redux, html, node, js, css, git, figma, wordpress];
 
   return (
-    <section className="skills_section text-info">
+    <section className="skills_section text-info pb-3">
       <h2 className="text-uppercase">My skills</h2>
       <div className="skill_ikons_wrapper">
         <div>
