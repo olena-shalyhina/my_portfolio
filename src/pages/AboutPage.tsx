@@ -3,7 +3,8 @@ import '../styles/AboutPage.scss';
 
 export const AboutPage: FC = () => {
   return (
-    <section className="about_section d-flex flex-column align-items-center text-info my-3 my-lg-5 fs-6 gap-4">
+    <section className="about_section d-flex flex-column align-items-center text-info mt-2 my-lg-2 fs-6 gap-4">
+      <h2 className="text-uppercase">About me</h2>
       <div className="about_experiens d-flex flex-column align-items-center p-3">
         <h4 className="p-2">EXPERIENS</h4>
         <ul className="h-75 text-start">

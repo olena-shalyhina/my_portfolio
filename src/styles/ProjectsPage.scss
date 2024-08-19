@@ -1,0 +1,20 @@
+.project_card_wrapper {
+  width: 360px;
+  height: 240px;
+  padding: 5px;
+  background: linear-gradient(
+    225deg,
+    rgba(128, 64, 181, 1) 22%,
+    rgba(233, 106, 7, 0.6896008403361344) 53%,
+    rgba(83, 124, 242, 0.9977240896358543) 82%
+  );
+  border-radius: 10px;
+  overflow: hidden;
+
+  .project_card_front {
+    min-width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+}

@@ -16,7 +16,7 @@ export const HomePage: FC = () => {
           height="255"
         />
 
-        <p className="p-3">
+        <p className="m-3">
           I have been seriously programming for more than 2 years and today I
           have almost a year of successful experience in developing a fairly
           large commercial project. In this project, I implemented a dark theme
@@ -42,7 +42,7 @@ export const HomePage: FC = () => {
         </a>
       </div>
       <div className="home_discription col-md-12 col-lg-3 d-flex  flex-column flex-md-row flex-lg-column align-items-center  justify-content-around order-3  px-1 ">
-        <p className="p-3">
+        <p className="m-3">
           Able to work independently and coordinate with other team members and
           stakeholders to effectively complete assigned tasks. I have an
           excellent ability to quickly learn new skills and technologies. I am
