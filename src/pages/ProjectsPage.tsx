@@ -1,81 +1,120 @@
 import { FC } from 'react';
-import Starfish2 from '../assets/starfish2.jpg';
+import Starfish from '../assets/starfish.jpg';
 import ShipmentsCrud from '../assets/shipments-crud.jpg';
 import PriceCalculate from '../assets/price-calculate.jpg';
 import Weather from '../assets/weather2.jpg';
 import BookStore from '../assets/book-store.jpg';
 
 import '../styles/ProjectsPage.scss';
+import { Button } from 'react-bootstrap';
 
 export const ProjectsPage: FC = () => {
   interface IProject {
     name: string;
     img: string;
     skills: string[];
-    link: string;
+    linkPreview: string;
+    linkGH: string;
   }
   const projects: IProject[] = [
     {
-      name: '1',
-      img: Starfish2,
-      skills: ['HTML', 'CSS'],
-      link: 'https://olena-shalyhina.github.io/online_restaurant_react/',
+      name: 'Starfish Restaurant',
+      img: Starfish,
+      skills: [
+        'Vite',
+        'TypeScript',
+        'React',
+        'Redux Toolkit',
+        'React Router',
+        'React Hook Form',
+        'React Bootstrap',
+        'SASS',
+      ],
+      linkPreview: 'https://olena-shalyhina.github.io/online_restaurant_react/',
+      linkGH: 'https://github.com/olena-shalyhina/online_restaurant_react',
     },
     {
-      name: '2',
+      name: 'Shipments Crud Page',
       img: ShipmentsCrud,
-      skills: ['HTML', 'CSS'],
-      link: 'https://olena-shalyhina.github.io/shipments_crud_page/',
+      skills: ['React', 'Redux', 'Redux Thunk', 'React Bootstrap', 'Axios'],
+      linkPreview: 'https://olena-shalyhina.github.io/shipments_crud_page',
+      linkGH: 'https://github.com/olena-shalyhina/shipments_crud_page',
     },
     {
-      name: '3',
+      name: 'Price Calculate',
       img: PriceCalculate,
-      skills: ['HTML', 'CSS'],
-      link: 'https://olena-shalyhina.github.io/price_calculator/',
+      skills: ['React', 'Redux', 'Chart.js', 'React Bootstrap', 'HTML', 'CSS'],
+      linkPreview: 'https://olena-shalyhina.github.io/price_calculator',
+      linkGH: 'https://github.com/olena-shalyhina/price_calculator',
     },
     {
-      name: '4',
+      name: 'Weather App',
       img: Weather,
-      skills: ['HTML', 'CSS'],
-      link: 'https://olena-shalyhina.github.io/weather-app/',
+      skills: ['React', 'Axios', 'HTML', 'CSS'],
+      linkPreview: 'https://olena-shalyhina.github.io/weather-app/',
+      linkGH: ' https://github.com/olena-shalyhina/weather-app',
     },
     {
-      name: '5',
+      name: 'Bookstore',
       img: BookStore,
-      skills: ['HTML', 'CSS'],
-      link: 'https://olena-shalyhina.github.io/book-store/',
+      skills: ['JS', 'HTML', 'CSS'],
+      linkPreview: 'https://olena-shalyhina.github.io/book-store/',
+      linkGH: 'https://github.com/olena-shalyhina/book-store',
     },
   ];
 
   return (
-    <section className="skills_section text-info pb-3 mt-2">
-      <h2 className="text-uppercase">My projects</h2>
-      <div className="d-flex flex-wrap  justify-content-center align-items-center gap-5 py-2">
+    <section className="skills_section d-flex flex-column  justify-content-between text-info mt-2">
+      <h2 className="text-uppercase pb-3">My projects</h2>
+      <div className="d-flex flex-wrap  justify-content-center align-items-center gap-4 gap-md-5 py-3">
         {projects &&
           projects.map((project) => (
-            <a
-              href={project.link}
-              key={project.name}
-              className="project_card_wrapper d-flex flex-row border border-2 border-info"
-              target="blank"
-            >
+            <div className="card bg-dark" key={project.name}>
               <div
-                className="project_card_front"
+                className="front border border-3 border-info"
                 style={{
                   backgroundImage: `url(${project.img})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
               ></div>
-
-              {/* <div className="project_card_back">
-              <p>{project.name}</p>
-              <ul>
-                {project.skills &&
-                  project.skills.map((skill) => <li key={skill}>{skill}</li>)}
-              </ul>
-            </div> */}
-            </a>
+              <div className="back d-flex flex-column align-items-center justify-content-between py-3 bg-dark text-info border border-3 border-info">
+                <h5 className="text-uppercase text-saccesful">
+                  {project.name}
+                </h5>
+                <ul className="d-flex align-items-center justify-content-center gap-2 flex-wrap small p-1">
+                  {project.skills &&
+                    project.skills.map((skill) => (
+                      <li
+                        className="border border-info px-1 rounded-1"
+                        key={skill}
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                </ul>
+                <div>
+                  <Button
+                    variant="outline-saccesful"
+                    size="sm"
+                    className="text-info mx-3"
+                    href={project.linkPreview}
+                    target="_blank"
+                  >
+                    Preview
+                  </Button>
+                  <Button
+                    variant="outline-saccesful"
+                    size="sm"
+                    className="text-info mx-3"
+                    href={project.linkGH}
+                    target="_blank"
+                  >
+                    GitHub
+                  </Button>
+                </div>
+              </div>
+            </div>
           ))}
       </div>
     </section>
