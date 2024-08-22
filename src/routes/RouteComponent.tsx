@@ -10,6 +10,7 @@ export const RouteComponent: FC = () => {
   return (
     <Routes>
       <Route index element={<HomePage />} />
+      <Route path={`/me`} element={<HomePage />} />
       <Route path={`/about`} element={<AboutPage />} />
       <Route path={`/skills`} element={<SkillsPage />} />
       <Route path={`/projects`} element={<ProjectsPage />} />

@@ -1,0 +1,17 @@
+.contacts_section_img img {
+  outline: 1px solid #420aa3;
+  filter: drop-shadow(0 0 3em #646cffaa);
+  width: 300px;
+  height: 200px;
+}
+
+.contacts_section_block {
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    225deg,
+    #420aa3 22%,
+    rgba(233, 94, 7, 0.69) 53%,
+    #535bf2 82%
+  );
+  border-image-slice: 1;
+}

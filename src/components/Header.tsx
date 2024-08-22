@@ -3,8 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../App.scss';
+import { useLocation } from 'react-router-dom';
 
 export const Header: FC = () => {
+  const location = useLocation();
+
   return (
     <Navbar
       expand="lg"
@@ -17,24 +20,16 @@ export const Header: FC = () => {
         </Navbar.Brand>
         <>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
           <Navbar.Collapse
             id="basic-navbar-nav"
             className="justify-content-end"
           >
-            <Nav className="fs-5">
-              <Nav.Link className="" href="/about">
-                About
-              </Nav.Link>
-              <Nav.Link className="" href="/skills">
-                Skills
-              </Nav.Link>
-              <Nav.Link className="" href="/projects">
-                Projects
-              </Nav.Link>
-              <Nav.Link className="" href="/contacts">
-                Contacts
-              </Nav.Link>
+            <Nav activeKey={location.pathname} className="fs-5">
+              <Nav.Link href="/me">Me</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/skills">Skills</Nav.Link>
+              <Nav.Link href="/projects">Projects</Nav.Link>
+              <Nav.Link href="/contacts">Contacts</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </>
