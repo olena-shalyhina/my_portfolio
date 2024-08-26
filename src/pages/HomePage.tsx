@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo3.jpg';
 import '../styles/HomePage.scss';
 import myPhoto from '../assets/my-photo.jpg';
 import monitor from '../assets/monitor.jpg';
@@ -24,20 +24,22 @@ export const HomePage: FC = () => {
           convenient and intuitive UI, adapted for tablet and mobile devices.
         </p>
       </div>
-      <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2 mb-5 gap-4">
+      <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2 mb-5 gap-3">
         <h1>
           <span className="text-saccesful">Hi! I`m </span>
           <br />
           OLENA SHALYHINA
         </h1>
 
+        <h4 className="fs-3">result-oriented and motivated</h4>
+
         <h2>
-          <span className="text-saccesful">JUNIOR</span>
+          <span className="text-saccesful fs-4">JUNIOR</span>
           <br />
           FRONT-END DEVELOPER
         </h2>
 
-        <a className="logo_container" href="" target="_blank">
+        <a className="logo_container" href="/contacts">
           <img src={logo} className="my_logo" alt="My logo" />
         </a>
       </div>

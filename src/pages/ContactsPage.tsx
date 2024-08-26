@@ -12,7 +12,10 @@ export const ContactsPage: FC = () => {
       </div>
       <div className="contacts_section_block text-center p-3">
         <h3>My Email</h3>
-        <a href="mailto:elena.shaligina.v@gmail.com" className="fs-5 fw-normal">
+        <a
+          href="mailto:elena.shaligina.v@gmail.com"
+          className="fs-5 fw-normal p-1"
+        >
           elena.shaligina.v@gmail.com
         </a>
       </div>

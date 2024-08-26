@@ -1,6 +1,7 @@
 .about_experiens,
 .about_languages,
-.about_education {
+.about_education,
+.about_certificates {
   border: 2px solid;
   border-image-source: linear-gradient(
     225deg,
@@ -9,4 +10,9 @@
     #535bf2 82%
   );
   border-image-slice: 1;
+}
+
+.certificate img:hover,
+.certificate img:active {
+  filter: drop-shadow(0 0 1em #646cffaa);
 }
