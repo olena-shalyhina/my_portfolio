@@ -48,7 +48,7 @@ export const ContactsPage: FC = () => {
   };
 
   return (
-    <section className="contacts_section d-flex flex-column align-items-center text-info mt-2 my-lg-2 fs-6 gap-3">
+    <section className="contacts_section d-flex flex-column align-items-center text-info mt-2 mt-lg-2 fs-6 gap-3">
       <h2 className="text-uppercase">My contacts</h2>
       <a
         href="mailto:elena.shaligina.v@gmail.com"
