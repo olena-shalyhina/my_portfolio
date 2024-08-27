@@ -2,65 +2,48 @@ import { FC } from 'react';
 import logo from '../assets/logo3.jpg';
 import '../styles/HomePage.scss';
 import myPhoto from '../assets/my-photo.jpg';
-import monitor from '../assets/monitor.jpg';
 
 export const HomePage: FC = () => {
   return (
     <section className="home_section row text-info mt-4 mx-1">
-      <div className="home_discription col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column  align-items-center justify-content-around order-2 order-lg-1 px-1 ">
-        <img
-          className="home_img m-3"
-          src={myPhoto}
-          alt="My photo"
-          width="200"
-          height="255"
-        />
-
-        <p className="m-3">
-          I have been seriously programming for more than 2 years and today I
-          have almost a year of successful experience in developing a fairly
-          large commercial project.
-          <br />
-          In this project, I implemented a dark theme for the site, participated
-          in setting up authentication and created a convenient and intuitive
-          UI, adapted for tablet and mobile devices.
-        </p>
-      </div>
-      <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2 mb-5 gap-3">
+      <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center mb-4 gap-4 gap-lg-3">
         <h1>
           <span className="text-success">Hi! I`m </span>
           <br />
           OLENA SHALYHINA
         </h1>
-
         <h4 className="fs-3">result-oriented and motivated</h4>
-
         <h2>
           <span className="text-success fs-4">JUNIOR</span>
           <br />
           FRONT-END DEVELOPER
         </h2>
-
         <a className="logo_container" href="/contacts">
           <img src={logo} className="my_logo" alt="My logo" />
         </a>
       </div>
-      <div className="home_discription col-md-12 col-lg-3 d-flex  flex-column flex-md-row flex-lg-column align-items-center  justify-content-around order-3  px-1 ">
-        <p className="m-3">
-          Able to work independently and coordinate with other team members and
-          stakeholders to effectively complete assigned tasks.
-          <br />I have an excellent ability to quickly learn new skills and
-          technologies.
-          <br />I am constantly developing and striving to become an exceptional
-          specialist in the field of web development.
-        </p>
+      <div className="home_discription col-md-12 col-lg-6 d-flex flex-column flex-md-row flex-lg-column  align-items-center justify-content-center mb-3 p-4 gap-3">
         <img
-          className="home_img  m-3"
-          src={monitor}
+          className="home_img"
+          src={myPhoto}
           alt="My photo"
           width="200"
           height="255"
         />
+        <p className="px-3 mb-0">
+          I have been actively programming for over two years and have almost a
+          year of experience working on a large commercial project.
+          <br />
+          In this role, I implemented the dark theme, participated in setting up
+          authentication, and developed a user-friendly user interface that
+          flexibly responds to different devices.
+          <br />
+          I thrive on working independently, collaborating effectively with team
+          members and stakeholders.
+          <br />I have a strong ability to quickly learn new skills and
+          technologies, and am committed to continuous development to become a
+          leading web development professional.
+        </p>
       </div>
     </section>
   );
