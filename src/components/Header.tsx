@@ -12,7 +12,7 @@ export const Header: FC = () => {
     <Navbar
       expand="lg"
       fixed="top"
-      className="bg-dark border border-top-0 border-start-0 border-end-0  border-saccesful"
+      className="bg-dark border border-top-0 border-start-0 border-end-0  border-success"
     >
       <Container>
         <Navbar.Brand href="/me" className="text-uppercase">

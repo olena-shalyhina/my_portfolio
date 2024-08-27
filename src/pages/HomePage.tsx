@@ -26,7 +26,7 @@ export const HomePage: FC = () => {
       </div>
       <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2 mb-5 gap-3">
         <h1>
-          <span className="text-saccesful">Hi! I`m </span>
+          <span className="text-success">Hi! I`m </span>
           <br />
           OLENA SHALYHINA
         </h1>
@@ -34,7 +34,7 @@ export const HomePage: FC = () => {
         <h4 className="fs-3">result-oriented and motivated</h4>
 
         <h2>
-          <span className="text-saccesful fs-4">JUNIOR</span>
+          <span className="text-success fs-4">JUNIOR</span>
           <br />
           FRONT-END DEVELOPER
         </h2>

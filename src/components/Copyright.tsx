@@ -5,7 +5,7 @@ export const Copyright: FC = () => {
   return (
     <div
       className="d-flex flex-column align-items-center 
-    bg-dark text-saccesful "
+    bg-dark text-success "
     >
       <Socials />
       <div className="text-center py-2">

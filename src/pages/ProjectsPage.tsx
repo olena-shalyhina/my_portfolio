@@ -79,9 +79,7 @@ export const ProjectsPage: FC = () => {
                 }}
               ></div>
               <div className="back d-flex flex-column align-items-center justify-content-between py-3 bg-dark text-info border border-3 border-info">
-                <h5 className="text-uppercase text-saccesful">
-                  {project.name}
-                </h5>
+                <h5 className="text-uppercase text-success">{project.name}</h5>
                 <ul className="d-flex align-items-center justify-content-center gap-2 flex-wrap small p-1">
                   {project.skills &&
                     project.skills.map((skill) => (
@@ -95,7 +93,7 @@ export const ProjectsPage: FC = () => {
                 </ul>
                 <div>
                   <Button
-                    variant="outline-saccesful"
+                    variant="outline-success"
                     size="sm"
                     className="text-info mx-3"
                     href={project.linkPreview}
@@ -104,7 +102,7 @@ export const ProjectsPage: FC = () => {
                     Preview
                   </Button>
                   <Button
-                    variant="outline-saccesful"
+                    variant="outline-success"
                     size="sm"
                     className="text-info mx-3"
                     href={project.linkGH}

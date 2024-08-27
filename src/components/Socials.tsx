@@ -5,7 +5,7 @@ export const Socials: FC = () => {
   return (
     <div className="d-flex justify-content-сenter gap-3 my-2">
       <Button
-        variant="outline-saccesful"
+        variant="outline-success"
         size="sm"
         className="text-info"
         href="https://t.me/olena_shalyhina"
@@ -14,7 +14,7 @@ export const Socials: FC = () => {
         <i className="bi bi-telegram h4"></i>
       </Button>
       <Button
-        variant="outline-saccesful"
+        variant="outline-success"
         size="sm"
         className="text-info"
         href="https://linkedin.com/in/olena-shalyhina"
@@ -23,7 +23,7 @@ export const Socials: FC = () => {
         <i className="bi bi-linkedin h4"></i>
       </Button>
       <Button
-        variant="outline-saccesful"
+        variant="outline-success"
         size="sm"
         className="text-info"
         href="https://www.facebook.com/olenashalyhina"
@@ -32,7 +32,7 @@ export const Socials: FC = () => {
         <i className="bi bi-facebook h4"></i>
       </Button>
       <Button
-        variant="outline-saccesful"
+        variant="outline-success"
         size="sm"
         className="text-info"
         href="https://github.com/olena-shalyhina"
