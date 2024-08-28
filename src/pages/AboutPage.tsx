@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import '../styles/AboutPage.scss';
 import English from '../assets/certificate-en.jpg';
 import React from '../assets/certificate-react.jpg';
+import '../styles/AboutPage.scss';
 
 export const AboutPage: FC = () => {
   return (

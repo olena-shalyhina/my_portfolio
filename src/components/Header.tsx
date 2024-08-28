@@ -15,7 +15,7 @@ export const Header: FC = () => {
       className="bg-dark border border-top-0 border-start-0 border-end-0  border-success"
     >
       <Container>
-        <Navbar.Brand href="/me" className="text-uppercase">
+        <Navbar.Brand href="/me" className="text-uppercase ps-1">
           OLENA SHALYHINA
         </Navbar.Brand>
         <>

@@ -1,40 +1,10 @@
 import { FC } from 'react';
 import { getUniqueId } from '../utils/guid';
-import css from '../assets/icons/css-3.svg';
-import html from '../assets/icons/html-5.svg';
-import js from '../assets/icons/js.svg';
-import node from '../assets/icons/node-js.svg';
-import git from '../assets/icons/git.svg';
-import react from '../assets/icons/react.svg';
-import redux from '../assets/icons/redux.svg';
-import figma from '../assets/icons/figma.svg';
-import wordpress from '../assets/icons/wordpress.svg';
-
+import { icons } from '../serviсes/api';
+import { skills } from '../serviсes/api';
 import '../styles/SkillsPage.scss';
 
 export const SkillsPage: FC = () => {
-  const skills = [
-    'JAVASCRIPT (ES6+)',
-    'TYPESCRIPT',
-    'REACT',
-    'REDUX',
-    'HTML 5',
-    'CSS 3',
-    'SASS/SCSS',
-    'BOOTSTRAP 5',
-    'RESPONSIVE LAYOUT',
-    'AXIOS',
-    'REACT HOOK FORM',
-    'CHART.JS',
-    'GIT/GITHUB',
-    'NPM',
-    'YARN',
-    'PHP',
-    'WORDPRESS',
-  ];
-
-  const icons = [react, redux, html, node, js, css, git, figma, wordpress];
-
   return (
     <section className="skills_section text-info pb-3 mt-2">
       <h2 className="text-uppercase">My skills</h2>

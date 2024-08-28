@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import logo from '../assets/logo3.jpg';
-import '../styles/HomePage.scss';
 import myPhoto from '../assets/my-photo.jpg';
+import '../styles/HomePage.scss';
 
 export const HomePage: FC = () => {
   return (
