@@ -3,8 +3,8 @@ import { onSubmit } from '../utils/sendEmail';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Location from '../assets/icons/location.svg';
-import SV from '..//assets/files/CV Olena Shalyhina Front-end.pdf';
-import '../styles/ContactsPage.scss';
+import CV from '..//assets/files/CV Olena Shalyhina Front-end.pdf';
+import '../styles/contactsPage.scss';
 
 export const ContactsPage: FC = () => {
   const [result, setResult] = useState<string>('');
@@ -12,13 +12,6 @@ export const ContactsPage: FC = () => {
   return (
     <section className="contacts_section d-flex flex-column align-items-center text-info mt-2 mt-lg-2 fs-6 gap-3">
       <h2 className="text-uppercase">My contacts</h2>
-      {/* <a
-        href="mailto:elena.shaligina.v@gmail.com"
-        className="contacts_section_form fs-6 fw-normal p-1 mb-1"
-      >
-        elena.shaligina.v@gmail.com
-      </a> */}
-
       <div className="contacts_section_form p-3">
         <h3>Get in touch</h3>
 
@@ -67,15 +60,18 @@ export const ContactsPage: FC = () => {
         href="mailto:elena.shaligina.v@gmail.com"
         className="contacts_section_form fs-6 fw-normal p-1 mb-1"
       >
-        elena.shaligina.v@gmail.com
+        <i className="bi bi-envelope-at text-info">
+          {' '}
+          elena.shaligina.v@gmail.com
+        </i>
       </a>
 
       <a
-        href={SV}
+        href={CV}
         className="contacts_section_form fs-6 fw-normal p-1 mb-2"
         download
       >
-        Download SV in PDF
+        <i className="bi bi-arrow-down-circle text-info"> Download CV in PDF</i>
       </a>
       <div className="d-flex justify-content-center gap-3 mt-1">
         <img src={Location} alt="Location svg" width={18} height={18} />

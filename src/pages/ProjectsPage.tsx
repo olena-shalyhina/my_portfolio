@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Button } from 'react-bootstrap';
 import { projects } from '../serviсes/api';
-import '../styles/ProjectsPage.scss';
+import '../styles/projectsPage.scss';
 
 export const ProjectsPage: FC = () => {
   return (

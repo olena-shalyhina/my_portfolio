@@ -1,14 +1,14 @@
 import { FC } from 'react';
 import English from '../assets/certificate-en.jpg';
 import React from '../assets/certificate-react.jpg';
-import '../styles/AboutPage.scss';
+import '../styles/aboutPage.scss';
 
 export const AboutPage: FC = () => {
   return (
-    <section className="about_section d-flex flex-column align-items-center text-info mt-2 mb-3 fs-6 gap-4">
+    <section className="about_section d-flex flex-column align-items-center justify-content-center text-info mt-2 mb-3 fs-6 gap-4">
       <h2 className="text-uppercase">About me</h2>
       <div className="about_experiens d-flex flex-column align-items-center ">
-        <h4 className="pt-3">EXPERIENS</h4>
+        <h4 className="pt-3">EXPERIENCE</h4>
         <ul className="h-75 text-start">
           <li>
             Since April 2023 Front-end developer “YOUR PRICE BOOKING”
@@ -25,7 +25,7 @@ export const AboutPage: FC = () => {
         </ul>
       </div>
       <div className="d-flex flex-column flex-lg-row justify-content-center gap-4">
-        <div className="about_education flex-column align-items-center  justify-content-center w-100 w-lg-25 p-2 pt-3">
+        <div className="about_education flex-column align-items-center  justify-content-center w-100 p-2 pt-3">
           <h4>EDUCATION</h4>
           <ul className="text-start">
             <li>
@@ -34,41 +34,41 @@ export const AboutPage: FC = () => {
             </li>
             <hr />
             <li>
-              Pavlograd Сollege of the National Mining University Associate
+              Pavlohrad Сollege of the National Mining University Associate
               Degree, Engineering
             </li>
           </ul>
         </div>
 
-        <div className="about_certificates w-100 w-lg-50 p-3 pt-3">
+        <div className="about_certificates w-100 py-3 pt-3">
           <h4 className="pb-2">СERTIFICATES</h4>
-          <div className="d-flex gap-3 justify-content-center">
+          <div className="d-flex gap-4 justify-content-center">
             <a
               href="https://drive.google.com/file/d/1KkIfmW8q90h8c53Eu7JLyvoj3jL-aVmr/view?usp=drive_link"
-              className="certificate p-3 p-lg-2"
+              className="certificate py-3 p-lg-2"
             >
               <img
                 src={English}
                 alt="Сertificate English B1"
-                width="140"
+                width="126"
                 height="200"
               />
             </a>
             <a
               href="https://drive.google.com/file/d/1zJAMv47RtC5DCiFeMUfrsLCi1i22cy6X/view?usp=drive_link"
-              className="certificate p-3 p-lg-2"
+              className="certificate py-3 p-lg-2"
             >
               <img
                 src={React}
                 alt="Сertificate React"
                 className="certificate"
-                width="140"
+                width="126"
                 height="200"
               />
             </a>
           </div>
         </div>
-        <div className="about_languages  w-100 w-lg-50 p-2 pt-3">
+        <div className="about_languages w-100 p-2 pt-3">
           <h4>LANGUAGES</h4>
           <ul>
             <li>Ukrainian (С2)</li>

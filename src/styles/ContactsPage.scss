@@ -1,10 +1,3 @@
-.contacts_section_img img {
-  outline: 1px solid #420aa3;
-  filter: drop-shadow(0 0 3em #646cffaa);
-  width: 300px;
-  height: 200px;
-}
-
 .contacts_section_form {
   width: 300px;
   border: 2px solid;
@@ -15,4 +8,8 @@
     #535bf2 82%
   );
   border-image-slice: 1;
+}
+
+.form-control::placeholder {
+  color: #5e17eb !important;
 }

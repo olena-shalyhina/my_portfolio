@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { getUniqueId } from '../utils/guid';
 import { icons } from '../serviсes/api';
 import { skills } from '../serviсes/api';
-import '../styles/SkillsPage.scss';
+import '../styles/skillsPage.scss';
 
 export const SkillsPage: FC = () => {
   return (
@@ -29,7 +29,7 @@ export const SkillsPage: FC = () => {
           skills.map((skill) => (
             <div
               key={getUniqueId()}
-              className="skill_box bg-dark fw-bold  d-flex  justify-content-center align-items-center"
+              className="skill_box bg-dark fw-medium d-flex  justify-content-center align-items-center w-25"
             >
               {skill}
             </div>

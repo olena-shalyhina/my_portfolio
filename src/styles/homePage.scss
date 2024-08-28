@@ -1,7 +1,4 @@
 .home_discription {
-  // margin: 10px 0px;
-  // border: 1px solid #7e45ee;
-  // border-radius: 5px;
   border: 2px solid;
   border-image-source: linear-gradient(
     225deg,
@@ -15,7 +12,7 @@
     display: block;
     width: 200px;
     height: 255px;
-    outline: 2px solid #420aa3;
+    border: 2px solid #420aa3;
     filter: drop-shadow(0 0 3em #646cffaa);
   }
 }
@@ -25,7 +22,7 @@
   width: 300px;
   padding: 1.5em;
   border-radius: 50%;
-  outline: 2px solid #420aa3;
+  border: 2px solid #420aa3;
   overflow: hidden;
   filter: drop-shadow(0 0 4em #646cffaa);
 }

@@ -1,9 +1,10 @@
 import { FC } from 'react';
 import logo from '../assets/logo3.jpg';
 import myPhoto from '../assets/my-photo.jpg';
-import '../styles/HomePage.scss';
+import '../styles/homePage.scss';
 
 export const HomePage: FC = () => {
+  const url = import.meta.env.BASE_URL;
   return (
     <section className="home_section row text-info mt-4 mx-1">
       <div className="col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-center mb-4 gap-4 gap-lg-3">
@@ -18,7 +19,7 @@ export const HomePage: FC = () => {
           <br />
           FRONT-END DEVELOPER
         </h2>
-        <a className="logo_container" href="/contacts">
+        <a className="logo_container" href={`${url}contacts`}>
           <img src={logo} className="my_logo" alt="My logo" />
         </a>
       </div>

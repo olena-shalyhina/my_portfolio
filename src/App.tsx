@@ -2,7 +2,6 @@ import { RouteComponent } from './routes/RouteComponent';
 import { Header } from './components/Header';
 import { Copyright } from './components/Copyright';
 import { Container } from 'react-bootstrap';
-import './App.scss';
 
 function App() {
   return (

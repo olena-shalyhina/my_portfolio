@@ -10,11 +10,11 @@ export const RouteComponent: FC = () => {
   return (
     <Routes>
       <Route index element={<HomePage />} />
-      <Route path={`/me`} element={<HomePage />} />
-      <Route path={`/about`} element={<AboutPage />} />
-      <Route path={`/skills`} element={<SkillsPage />} />
-      <Route path={`/projects`} element={<ProjectsPage />} />
-      <Route path={`/contacts`} element={<ContactsPage />} />
+      <Route path={`me`} element={<HomePage />} />
+      <Route path={`about`} element={<AboutPage />} />
+      <Route path={`skills`} element={<SkillsPage />} />
+      <Route path={`projects`} element={<ProjectsPage />} />
+      <Route path={`contacts`} element={<ContactsPage />} />
     </Routes>
   );
 };
