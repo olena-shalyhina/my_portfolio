@@ -42,7 +42,7 @@ export const AboutPage: FC = () => {
 
         <div className="about_certificates w-100 py-3 pt-3">
           <h4 className="pb-2">СERTIFICATES</h4>
-          <div className="d-flex gap-4 justify-content-center">
+          <div className="d-flex justify-content-evenly">
             <a
               href="https://drive.google.com/file/d/1KkIfmW8q90h8c53Eu7JLyvoj3jL-aVmr/view?usp=drive_link"
               className="certificate py-3 p-lg-2"
@@ -50,8 +50,8 @@ export const AboutPage: FC = () => {
               <img
                 src={English}
                 alt="Сertificate English B1"
-                width="126"
-                height="200"
+                width="120"
+                height="190"
               />
             </a>
             <a
@@ -62,8 +62,8 @@ export const AboutPage: FC = () => {
                 src={React}
                 alt="Сertificate React"
                 className="certificate"
-                width="126"
-                height="200"
+                width="120"
+                height="190"
               />
             </a>
           </div>
