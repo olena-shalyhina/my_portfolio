@@ -1,14 +1,26 @@
-.about_experiens,
+.about_experience,
 .about_languages,
-.about_education,
+.about_responsibilities,
 .about_certificates {
-  border: 2px solid;
-  border-image-source: linear-gradient(
-    225deg,
-    #420aa3 22%,
-    rgba(233, 94, 7, 0.69) 53%,
-    #535bf2 82%
-  );
+  border: 1px solid;
+  // border-image-source: linear-gradient(
+  //   225deg,
+  //   #420aa3 22%,
+  //   rgba(233, 94, 7, 0.69) 53%,
+  //   #535bf2 82%
+  // );
+  // border-image-slice: 1;
+  background-color: rgb(8, 2, 34);
+  border-radius: 10px;
+}
+.about_certificates {
+  border: 1px solid;
+  // border-image-source: linear-gradient(
+  //   225deg,
+  //   #420aa3 22%,
+  //   rgba(233, 94, 7, 0.69) 53%,
+  //   #535bf2 82%
+  // );
   border-image-slice: 1;
 }
 

@@ -7,22 +7,53 @@
     #535bf2 82%
   );
   border-image-slice: 1;
+}
+.home_img {
+  object-fit: cover;
 
-  .home_img {
-    display: block;
-    width: 200px;
-    height: 255px;
-    border: 2px solid #420aa3;
-    filter: drop-shadow(0 0 3em #646cffaa);
+  /* ПОЛУКРУГЛАЯ ФОРМА */
+  border-radius: 20px 20px 20px 50%;
+
+  /* РАМКА + ГРАДИЕНТ */
+  padding: 2px;
+  background: linear-gradient(
+    225deg,
+    #420aa3 22%,
+    rgba(233, 94, 7, 0.69) 53%,
+    #535bf2 82%
+  );
+
+  /* ТЕНЬ ДЛЯ ГЛУБИНЫ */
+  filter: drop-shadow(0 0 4em #646cffaa);
+  /* ЭФФЕКТ ПАРЕНИЯ */
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.01);
+  }
+  100% {
   }
 }
 
+// .logo_container {
+//   position: absolute;
+//   top: 90px;
+//   right: 40px;
+// }
 .my_logo {
-  height: 300px;
-  width: 300px;
-  padding: 1.5em;
+  height: 140px;
+  width: 140px;
+  // border-radius: 20px 20px 20px 20px;
+  // padding: 1.5em;
+  // margin: 0 10 20px 10px;
+
   border-radius: 50%;
-  border: 2px solid #420aa3;
+  border: 2px solid #5e17eb;
   overflow: hidden;
   filter: drop-shadow(0 0 4em #646cffaa);
 }

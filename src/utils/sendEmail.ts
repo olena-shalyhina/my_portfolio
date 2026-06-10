@@ -1,6 +1,6 @@
 import { FormEvent } from 'react';
 
-const ACCESS_KEY: string = import.meta.env.VITE_ACCESS_KEY;
+const WEB3_TOKEN: string = import.meta.env.VITE_ACCESS_KEY;
 
 export const onSubmit = async (
   event: FormEvent<HTMLFormElement>,
@@ -17,7 +17,7 @@ export const onSubmit = async (
   const formElement = event.currentTarget;
   const formData = new FormData(formElement);
 
-  formData.append('access_key', ACCESS_KEY);
+  formData.append('access_key', WEB3_TOKEN);
 
   try {
     const response = await fetch('https://api.web3forms.com/submit', {

@@ -1,13 +1,36 @@
+// $theme-colors: (
+//   //   'info': #f36524,
+//   //   'success': #5e17eb,
+//   //   'dark': #020010,
+//   // );
+//   'info': #f36524,
+//   'success': #535bf2,
+//   'dark': #020010
+
+// );
 $theme-colors: (
-  'info': #f36524,
-  'success': #5e17eb,
+  'primary': #535bf2,
+  // твой фиолетовый
+  'secondary': #7e45ee,
+  // светлее для hover
+  'accent': #f36524,
+  // оранжевый
   'dark': #020010,
+  // фон
+  'light': #f7f7fb,
+  // для светлой темы
+  'info': #7e45ee,
+  // можно оставить как secondary
+  'success': #4caf50,
+  // вернуть нормальный success
+  'warning': #ffb84d,
+  'danger': #ff4d4d,
 );
-$navbar-light-color: #f36524;
+
+$navbar-light-color: map-get($theme-colors, 'primary');
 
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#535bf2' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-$navbar-light-toggler-border-color: #f36524;
+$navbar-light-toggler-border-color: map-get($theme-colors, 'accent');
 
-// $nav-link-color: #db9575;
-$navbar-light-hover-color: #7e45ee;
-$navbar-light-active-color: #535bf2;
+$navbar-light-hover-color: map-get($theme-colors, 'accent');
+$navbar-light-active-color: map-get($theme-colors, 'accent');
