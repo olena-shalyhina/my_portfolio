@@ -10,21 +10,40 @@
   //   #535bf2 82%
   // );
   // border-image-slice: 1;
-  background-color: rgb(8, 2, 34);
-  border-radius: 10px;
+  background-color: rgb(8, 1, 35);
+  border-radius: 12px;
 }
-.about_certificates {
-  border: 1px solid;
-  // border-image-source: linear-gradient(
-  //   225deg,
-  //   #420aa3 22%,
-  //   rgba(233, 94, 7, 0.69) 53%,
-  //   #535bf2 82%
-  // );
-  border-image-slice: 1;
-}
+// .about_certificates {
+//   border: 1px solid;
+//   // border-image-source: linear-gradient(
+//   //   225deg,
+//   //   #420aa3 22%,
+//   //   rgba(233, 94, 7, 0.69) 53%,
+//   //   #535bf2 82%
+//   // );
+//   border-image-slice: 1;
+// }
 
 .certificate img:hover,
 .certificate img:active {
   filter: drop-shadow(0 0 1em #646cffaa);
+}
+
+.custom-list {
+  li {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 20px;
+      height: 20px;
+      background-image: url('/src/assets/monitor.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
 }

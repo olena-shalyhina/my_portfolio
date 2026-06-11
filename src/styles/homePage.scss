@@ -40,20 +40,11 @@
   }
 }
 
-// .logo_container {
-//   position: absolute;
-//   top: 90px;
-//   right: 40px;
-// }
 .my_logo {
   height: 140px;
   width: 140px;
-  // border-radius: 20px 20px 20px 20px;
-  // padding: 1.5em;
-  // margin: 0 10 20px 10px;
-
   border-radius: 50%;
-  border: 2px solid #5e17eb;
+  border: 1px solid #5e17eb;
   overflow: hidden;
   filter: drop-shadow(0 0 4em #646cffaa);
 }

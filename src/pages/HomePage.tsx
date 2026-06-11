@@ -2,7 +2,6 @@ import { FC } from 'react';
 import logo from '../assets/SH.jpg';
 import myPhoto from '../assets/my-photo.jpg';
 import '../styles/homePage.scss';
-import { Socials } from '../components/Socials';
 
 export const HomePage: FC = () => {
   const url = import.meta.env.BASE_URL;
@@ -39,7 +38,6 @@ export const HomePage: FC = () => {
           to continuous growth as a frontend and mobile engineer and enjoy
           building interfaces that feel smooth, intuitive and modern.
         </p>
-        {/* <Socials /> */}
       </div>
       <div className='col-md-12 col-lg-4 d-flex  align-items-center justify-content-center   '>
         <img

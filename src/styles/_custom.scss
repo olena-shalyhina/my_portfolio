@@ -1,28 +1,11 @@
-// $theme-colors: (
-//   //   'info': #f36524,
-//   //   'success': #5e17eb,
-//   //   'dark': #020010,
-//   // );
-//   'info': #f36524,
-//   'success': #535bf2,
-//   'dark': #020010
-
-// );
 $theme-colors: (
-  'primary': #535bf2,
-  // твой фиолетовый
+  'primary': #a382f6,
   'secondary': #7e45ee,
-  // светлее для hover
   'accent': #f36524,
-  // оранжевый
   'dark': #020010,
-  // фон
-  'light': #f7f7fb,
-  // для светлой темы
+  'light': #d5d5f5,
   'info': #7e45ee,
-  // можно оставить как secondary
   'success': #4caf50,
-  // вернуть нормальный success
   'warning': #ffb84d,
   'danger': #ff4d4d,
 );
