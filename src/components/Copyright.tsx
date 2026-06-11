@@ -7,7 +7,7 @@ export const Copyright: FC = () => {
   return (
     <div className='d-flex flex-column align-items-center bg-dark text-primary pb-1'>
       <Socials />
-      <div className='text-center small py-2'>
+      <div className='text-center small pt-4'>
         &copy; Copyright "My portfolio" Tallinn {currentYear}
       </div>
     </div>
