@@ -7,7 +7,7 @@
   }
 }
 .skill_ikons_wrapper {
-  margin: 10px auto;
+  margin: 5px auto;
 
   overflow: hidden;
 
@@ -24,6 +24,12 @@
 
       img {
         width: 8%;
+        @media (min-width: 1024px) {
+          width: 5%;
+        }
+        @media (min-width: 1320px) {
+          width: 8%;
+        }
       }
     }
   }
@@ -39,8 +45,8 @@
     rgba(83, 124, 242, 0.9977240896358543) 82%
   );
   .skill_box {
-    height: 36px;
+    height: 2.5em;
     min-width: 280px;
-    border-radius: 20px;
+    border-radius: 2.5em;
   }
 }

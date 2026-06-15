@@ -10,10 +10,10 @@ export const ContactsPage: FC = () => {
   const [result, setResult] = useState<string>('');
 
   return (
-    <section className='contacts_section d-flex flex-column align-items-center text-info mt-2 mt-lg-2 fs-6 gap-3'>
-      <h2 className='text-uppercase'>My contacts</h2>
-      <div className='contacts_section_form p-3'>
-        <h3>Get in touch</h3>
+    <section className='contacts_section d-flex flex-column align-items-center text-secondary gap-3 my-3'>
+      <h5 className='text-uppercase d-lg-none'>My contacts</h5>
+      <div className='contacts_section_form p-3 '>
+        <h3 className='fs-6 fs-md-5 fs-lg-4'>Get in touch</h3>
 
         <Form className='mx-1' onSubmit={(event) => onSubmit(event, setResult)}>
           <Form.Group className='text-light mb-3' controlId='Name1'>
@@ -79,7 +79,7 @@ export const ContactsPage: FC = () => {
       </a>
       <div className='d-flex justify-content-center gap-3 mt-1'>
         <img src={Location} alt='Location svg' width={18} height={18} />
-        <span className='text-light fs-6'>Estonia, Tallinn</span>
+        <span className='text-light fs-6 mb-2'>Estonia, Tallinn</span>
       </div>
     </section>
   );

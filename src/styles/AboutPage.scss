@@ -1,3 +1,5 @@
+@import './_custom.scss';
+
 .about_experience,
 .about_languages,
 .about_responsibilities,
@@ -5,19 +7,19 @@
   border: 1px solid;
   // border-image-source: linear-gradient(
   //   225deg,
-  //   #420aa3 22%,
+  //   map-get($theme-colors, 'secondary') 22%,
   //   rgba(233, 94, 7, 0.69) 53%,
   //   #535bf2 82%
   // );
   // border-image-slice: 1;
-  background-color: rgb(8, 1, 35);
+  background-color: map-get($theme-colors, 'info');
   border-radius: 12px;
 }
 // .about_certificates {
 //   border: 1px solid;
 //   // border-image-source: linear-gradient(
 //   //   225deg,
-//   //   #420aa3 22%,
+//   //   map-get($theme-colors, 'secondary') 22%,
 //   //   rgba(233, 94, 7, 0.69) 53%,
 //   //   #535bf2 82%
 //   // );
@@ -32,15 +34,18 @@
 .custom-list {
   li {
     position: relative;
-    padding-left: 40px;
+    padding-left: 28px;
+    // background-color: $info;
+    // border-radius: 6px;
+    // border: 1px solid $secondary;
 
     &::before {
       content: '';
       position: absolute;
       left: 0;
       top: 4px;
-      width: 18px;
-      height: 18px;
+      width: 12px;
+      height: 12px;
       background-image: url('/src/assets/monitor.jpg');
       background-size: contain;
       background-repeat: no-repeat;

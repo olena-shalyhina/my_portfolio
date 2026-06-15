@@ -1,19 +1,33 @@
+// -----------------------------
+// 🎨 Theme Colors
+// -----------------------------
 $theme-colors: (
   'primary': #a382f6,
   'secondary': #7e45ee,
   'accent': #f36524,
   'dark': #020010,
   'light': #d5d5f5,
-  'info': #7e45ee,
+  'info': #080123,
   'success': #4caf50,
   'warning': #ffb84d,
   'danger': #ff4d4d,
 );
 
-$navbar-light-color: map-get($theme-colors, 'primary');
+// -----------------------------
+// Variables
+// -----------------------------
+$primary: map-get($theme-colors, 'primary');
+$secondary: map-get($theme-colors, 'secondary');
+$accent: map-get($theme-colors, 'accent');
+$dark: map-get($theme-colors, 'dark');
+$light: map-get($theme-colors, 'light');
+$info: map-get($theme-colors, 'info');
 
-$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#535bf2' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-$navbar-light-toggler-border-color: map-get($theme-colors, 'accent');
-
-$navbar-light-hover-color: map-get($theme-colors, 'accent');
-$navbar-light-active-color: map-get($theme-colors, 'accent');
+// -----------------------------
+// Navbar Colors
+// -----------------------------
+$navbar-light-color: $primary;
+$navbar-light-hover-color: $accent;
+$navbar-light-active-color: $accent;
+$navbar-light-toggler-border-color: $secondary;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$accent}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22 M4 15h22 M4 23h22'/></svg>");

@@ -1,27 +1,27 @@
-.home_discription {
-  border: 2px solid;
-  border-image-source: linear-gradient(
-    225deg,
-    #420aa3 22%,
-    rgba(233, 94, 7, 0.69) 53%,
-    #535bf2 82%
-  );
-  border-image-slice: 1;
+.home_description {
+  opacity: 0.9;
+  border: 1px solid #5e17eb;
 }
+
 .home_img {
   object-fit: cover;
+  border: 1px solid #5e17eb;
+  @media (min-width: 1320px) {
+    width: 400px;
+    height: 500px;
+  }
 
   /* ПОЛУКРУГЛАЯ ФОРМА */
   border-radius: 20px 20px 20px 50%;
 
   /* РАМКА + ГРАДИЕНТ */
-  padding: 2px;
-  background: linear-gradient(
-    225deg,
-    #420aa3 22%,
-    rgba(233, 94, 7, 0.69) 53%,
-    #535bf2 82%
-  );
+  // padding: 1px;
+  // background: linear-gradient(
+  //   225deg,
+  //   #420aa3 22%,
+  //   rgba(233, 94, 7, 0.69) 53%,
+  //   #535bf2 82%
+  // );
 
   /* ТЕНЬ ДЛЯ ГЛУБИНЫ */
   filter: drop-shadow(0 0 4em #646cffaa);
@@ -41,10 +41,19 @@
 }
 
 .my_logo {
-  height: 140px;
-  width: 140px;
+  height: auto;
+  width: 100px;
   border-radius: 50%;
-  border: 1px solid #5e17eb;
+  border: 3px solid #5e17eb;
   overflow: hidden;
   filter: drop-shadow(0 0 4em #646cffaa);
+
+  @media (min-width: 992px) {
+    width: 100px;
+    display: none;
+  }
+  @media (min-width: 1320px) {
+    width: 140px;
+    display: block;
+  }
 }

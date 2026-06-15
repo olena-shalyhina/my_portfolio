@@ -1,7 +1,12 @@
 .card {
   width: 300px;
-  min-height: 210px;
+  min-height: 190px;
   cursor: pointer;
+
+  @media (min-width: 1320px) {
+    width: 320px;
+    min-height: 210px;
+  }
 
   .front,
   .back {
@@ -11,8 +16,9 @@
     position: absolute;
     transition: transform 0.6s linear;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 8px;
     filter: drop-shadow(0 0 2em #646cffaa);
+    border: 1px solid #5e17eb;
   }
 
   .front {

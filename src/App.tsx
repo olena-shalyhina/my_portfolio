@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <Container className="main_container d-flex flex-column justify-content-between align-items-center">
+    <Container className='main_container d-flex flex-column justify-content-around align-items-stretch'>
       <Header />
       <RouteComponent />
       <Copyright />
