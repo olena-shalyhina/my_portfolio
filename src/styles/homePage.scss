@@ -1,18 +1,20 @@
+@import './_custom.scss';
+
 .home_description {
   opacity: 0.9;
-  border: 1px solid #5e17eb;
+  // border: $border-sm;
 }
 
 .home_img {
   object-fit: cover;
-  border: 1px solid #5e17eb;
+  border: $border-sm;
   @media (min-width: 1320px) {
     width: 400px;
     height: 500px;
   }
-
-  /* ПОЛУКРУГЛАЯ ФОРМА */
   border-radius: 20px 20px 20px 50%;
+  filter: $drop-shadow-md;
+  animation: float 4s ease-in-out infinite;
 
   /* РАМКА + ГРАДИЕНТ */
   // padding: 1px;
@@ -22,11 +24,6 @@
   //   rgba(233, 94, 7, 0.69) 53%,
   //   #535bf2 82%
   // );
-
-  /* ТЕНЬ ДЛЯ ГЛУБИНЫ */
-  filter: drop-shadow(0 0 4em #646cffaa);
-  /* ЭФФЕКТ ПАРЕНИЯ */
-  animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -44,16 +41,14 @@
   height: auto;
   width: 100px;
   border-radius: 50%;
-  border: 3px solid #5e17eb;
+  border: $border-lg;
   overflow: hidden;
-  filter: drop-shadow(0 0 4em #646cffaa);
+  filter: $drop-shadow-md;
 
   @media (min-width: 992px) {
-    width: 100px;
-    display: none;
+    width: 80px;
   }
   @media (min-width: 1320px) {
     width: 140px;
-    display: block;
   }
 }

@@ -7,7 +7,7 @@ export const HomePage: FC = () => {
   const url = import.meta.env.BASE_URL;
   return (
     <section className='home_section row text-secondary d-flex align-items-center justify-content-center gap-5 my-3'>
-      <div className='col-md-12 col-lg-7 d-flex flex-column justify-content-start align-items-center gap-2 gap-xxl-4 padding px-lg-3 '>
+      <div className='col-md-12 col-lg-7 d-flex flex-column justify-content-start align-items-center gap-3 gap-xxl-4 padding px-lg-3'>
         <a href={`${url}contacts`}>
           <img
             src={logo}
@@ -26,7 +26,7 @@ export const HomePage: FC = () => {
           </div>
         </div>
 
-        <p className='text-light bg-info p-3 p-xxl-4 home_description rounded-4'>
+        <p className='text-light bg-info p-3 p-xxl-4 home_description border border-secondary rounded-4'>
           I have commercial experience in building modern mobile and web
           interfaces. I work with React, React Native, TypeScript, Redux
           Toolkit, React Navigation and Expo, creating clean, responsive and
@@ -49,7 +49,7 @@ export const HomePage: FC = () => {
           className='home_img'
           src={myPhoto}
           alt='My photo'
-          width='350'
+          width='300'
           height='400'
         />
       </div>

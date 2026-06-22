@@ -31,3 +31,13 @@ $navbar-light-hover-color: $accent;
 $navbar-light-active-color: $accent;
 $navbar-light-toggler-border-color: $secondary;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$accent}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22 M4 15h22 M4 23h22'/></svg>");
+
+// ------------------------------
+// Borders and effects
+// ------------------------------
+
+$border-sm: 1px solid $secondary;
+$border-md: 2px solid $secondary;
+$border-lg: 3px solid $secondary;
+$drop-shadow-md: drop-shadow(0 0 4em #646cffaa);
+$drop-shadow-sm: drop-shadow(0 0 2em #646cffaa);

@@ -4,8 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../App.scss';
 import { useLocation } from 'react-router-dom';
-import logo from '../assets/SH.jpg';
-// import logo from '../assets/new_logo.png';
+
 export const Header: FC = () => {
   const url = import.meta.env.BASE_URL;
   const location = useLocation();
@@ -24,6 +23,7 @@ export const Header: FC = () => {
         >
           OLENA SHALYHINA
         </Navbar.Brand>
+
         <>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse

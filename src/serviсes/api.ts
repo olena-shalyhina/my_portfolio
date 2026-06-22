@@ -67,7 +67,7 @@ export const projects: IProject[] = [
   {
     name: 'Price Calculate',
     img: PriceCalculate,
-    skills: ['React', 'Redux', 'Chart.js', 'React Bootstrap', 'HTML', 'CSS'],
+    skills: ['React', 'Redux', 'CSS', 'HTML', 'Chart.js', 'React Bootstrap'],
     linkPreview: 'https://olena-shalyhina.github.io/price_calculator',
     linkGH: 'https://github.com/olena-shalyhina/price_calculator',
   },

@@ -6,7 +6,7 @@ import '../styles/skillsPage.scss';
 
 export const SkillsPage: FC = () => {
   return (
-    <section className='skills_section text-secondary my-3 d-flex flex-column gap-lg-3 '>
+    <section className='skills_section text-secondary my-3 d-flex flex-column gap-lg-3 gap-xxl-5'>
       <h3 className='text-uppercase text-secondary d-lg-none'>My skills</h3>
       <div className='skill_ikons_wrapper'>
         <div>
@@ -32,12 +32,12 @@ export const SkillsPage: FC = () => {
           </span>
         </div>
       </div>
-      <div className='skills_list_wrapper d-flex flex-wrap  justify-content-evenly align-items-center gap-3 gap-xxl-4 py-3 my-xxl-4 '>
+      <div className='skills_list_wrapper d-flex flex-wrap justify-content-evenly align-items-center gap-3  gap-xxl-4 py-3 '>
         {skills &&
           skills.map((skill) => (
             <div
               key={getUniqueId()}
-              className='skill_box bg-info d-flex justify-content-center align-items-center w-25 text-light fw-medium'
+              className='skill_box bg-info d-flex justify-content-center align-items-center w-25 text-light fw-medium small'
             >
               {skill}
             </div>

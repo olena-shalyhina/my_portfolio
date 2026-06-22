@@ -10,13 +10,13 @@ export const ContactsPage: FC = () => {
   const [result, setResult] = useState<string>('');
 
   return (
-    <section className='contacts_section d-flex flex-column align-items-center text-secondary gap-3 my-3'>
+    <section className='contacts_section d-flex flex-column align-items-center text-secondary gap-3 gap-xxl-5 my-3 my-lg-1'>
       <h5 className='text-uppercase d-lg-none'>My contacts</h5>
-      <div className='contacts_section_form p-3 '>
+      <div className='contacts_section_form p-3'>
         <h3 className='fs-6 fs-md-5 fs-lg-4'>Get in touch</h3>
 
         <Form className='mx-1' onSubmit={(event) => onSubmit(event, setResult)}>
-          <Form.Group className='text-light mb-3' controlId='Name1'>
+          <Form.Group className='text-light mb-2' controlId='Name1'>
             <Form.Label>Your name</Form.Label>
             <Form.Control
               type='text'
@@ -26,7 +26,7 @@ export const ContactsPage: FC = () => {
               className='inputGroup-sizing-sm'
             />
           </Form.Group>
-          <Form.Group className='text-light mb-3' controlId='Email1'>
+          <Form.Group className='text-light mb-2' controlId='Email1'>
             <Form.Label>Email address</Form.Label>
             <Form.Control
               type='email'
@@ -35,7 +35,7 @@ export const ContactsPage: FC = () => {
               name='email'
             />
           </Form.Group>
-          <Form.Group className='text-light mb-3' controlId='Textarea1'>
+          <Form.Group className='text-light mb-2' controlId='Textarea1'>
             <Form.Label>Message</Form.Label>
             <Form.Control
               as='textarea'
@@ -49,7 +49,7 @@ export const ContactsPage: FC = () => {
 
           <Button
             variant='outline-accent'
-            className='fs-5  w-100 mb-3'
+            className='fs-5  w-100 mb-2'
             type='submit'
           >
             Submit
@@ -59,7 +59,7 @@ export const ContactsPage: FC = () => {
       </div>
       <a
         href='mailto:elena.shaligina.v@gmail.com'
-        className='contacts_section_form fs-6 fw-normal p-1 mb-1'
+        className='contacts_section_form fs-6 fw-normal p-2 mb-1'
       >
         <i className='bi bi-envelope-at text-light'>
           {' '}
@@ -69,7 +69,7 @@ export const ContactsPage: FC = () => {
 
       <a
         href={CV}
-        className='contacts_section_form fs-6 fw-normal p-1 mb-2'
+        className='contacts_section_form fw-normal p-2 mb-2'
         download
       >
         <i className='bi bi-arrow-down-circle text-light'>
@@ -77,9 +77,9 @@ export const ContactsPage: FC = () => {
           Download CV in PDF
         </i>
       </a>
-      <div className='d-flex justify-content-center gap-3 mt-1'>
+      <div className='mt-3 d-lg-none d-xxl-block'>
         <img src={Location} alt='Location svg' width={18} height={18} />
-        <span className='text-light fs-6 mb-2'>Estonia, Tallinn</span>
+        <span className='text-light fs-6 mb-2 ps-2'> Estonia, Tallinn</span>
       </div>
     </section>
   );

@@ -19,9 +19,9 @@ export const ProjectsPage: FC = () => {
                   backgroundPosition: 'start',
                 }}
               ></div>
-              <div className='back d-flex flex-column align-items-center justify-content-between py-3 bg-dark text-secondary border border-1 border-secondary'>
+              <div className='back d-flex flex-column align-items-center justify-content-between py-3  text-secondary border border-1 border-secondary'>
                 <h6 className='text-uppercase  text-accent'>{project.name}</h6>
-                <ul className='d-flex align-items-center justify-content-center gap-2 flex-wrap small p-1'>
+                <ul className='d-flex align-items-center justify-content-center gap-2 flex-wrap small p-3 p-xxl-4'>
                   {project.skills &&
                     project.skills.map((skill) => (
                       <li

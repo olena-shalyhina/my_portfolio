@@ -25,7 +25,7 @@
       img {
         width: 8%;
         @media (min-width: 1024px) {
-          width: 5%;
+          width: 6%;
         }
         @media (min-width: 1320px) {
           width: 8%;
@@ -36,7 +36,7 @@
 }
 
 .skills_list_wrapper {
-  min-height: 27em;
+  min-height: 25em;
   border-radius: 12px;
   background: linear-gradient(
     225deg,
@@ -45,8 +45,8 @@
     rgba(83, 124, 242, 0.9977240896358543) 82%
   );
   .skill_box {
-    height: 2.5em;
+    height: 3em;
     min-width: 280px;
-    border-radius: 2.5em;
+    border-radius: 3em;
   }
 }

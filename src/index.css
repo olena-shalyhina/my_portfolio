@@ -2,8 +2,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   height: 100%;
-  font-size: 14px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  letter-spacing: 1.3px;
 }
 
 body {
@@ -12,45 +12,4 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #020010;
-}
-
-a {
-  font-weight: 700;
-  text-decoration: none;
-  color: #535bf2;
-}
-a:hover,
-a:active {
-  color: #7e45ee;
-  animation: grow_txt 1s linear 0s infinite alternate;
-}
-
-@keyframes grow_txt {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-h1 {
-  letter-spacing: 3.5px;
-  color: #535bf2;
-}
-
-h3 {
-  text-transform: uppercase;
-  font-size: 1.5em;
-  line-height: 1.5;
-  letter-spacing: 3.5px;
-  color: #f36524eb;
-}
-
-ul {
-  list-style: none;
-  padding: 1rem;
 }

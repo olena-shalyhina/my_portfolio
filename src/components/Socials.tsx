@@ -7,7 +7,6 @@ export const Socials: FC = () => {
       <Button
         variant='outline-accent'
         size='sm'
-        // className='text-primary'
         href='https://t.me/olena_shalyhina'
         target='_blank'
       >
@@ -16,7 +15,6 @@ export const Socials: FC = () => {
       <Button
         variant='outline-accent'
         size='sm'
-        // className='text-primary'
         href='https://linkedin.com/in/olena-shalyhina'
         target='_blank'
       >
@@ -34,7 +32,6 @@ export const Socials: FC = () => {
       <Button
         variant='outline-accent'
         size='sm'
-        // className='text-dark'
         href='https://github.com/olena-shalyhina'
         target='_blank'
       >

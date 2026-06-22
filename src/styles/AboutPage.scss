@@ -4,41 +4,21 @@
 .about_languages,
 .about_responsibilities,
 .about_certificates {
-  border: 1px solid;
-  // border-image-source: linear-gradient(
-  //   225deg,
-  //   map-get($theme-colors, 'secondary') 22%,
-  //   rgba(233, 94, 7, 0.69) 53%,
-  //   #535bf2 82%
-  // );
-  // border-image-slice: 1;
-  background-color: map-get($theme-colors, 'info');
+  border: $border-sm;
+  background-color: $info;
   border-radius: 12px;
 }
-// .about_certificates {
-//   border: 1px solid;
-//   // border-image-source: linear-gradient(
-//   //   225deg,
-//   //   map-get($theme-colors, 'secondary') 22%,
-//   //   rgba(233, 94, 7, 0.69) 53%,
-//   //   #535bf2 82%
-//   // );
-//   border-image-slice: 1;
-// }
-
-.certificate img:hover,
-.certificate img:active {
-  filter: drop-shadow(0 0 1em #646cffaa);
+.certificate img {
+  transition:
+    filter 0.4s ease,
+    transform 0.4s ease;
 }
 
 .custom-list {
   li {
     position: relative;
     padding-left: 28px;
-    // background-color: $info;
-    // border-radius: 6px;
-    // border: 1px solid $secondary;
-
+    list-style: none;
     &::before {
       content: '';
       position: absolute;
