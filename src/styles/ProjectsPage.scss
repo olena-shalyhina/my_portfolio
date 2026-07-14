@@ -1,6 +1,7 @@
 @import './_custom.scss';
 
 .card {
+  position: relative;
   width: 300px;
   min-height: 190px;
   cursor: pointer;

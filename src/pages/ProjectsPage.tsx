@@ -32,24 +32,22 @@ export const ProjectsPage: FC = () => {
                       </li>
                     ))}
                 </ul>
-                <div>
+                <div className='d-flex gap-3 justify-content-around'>
                   <Button
                     variant='outline-accent'
                     size='sm'
-                    className='mx-3'
                     href={project.linkPreview}
                     target='_blank'
                   >
-                    Preview
+                    <span>Preview</span>
                   </Button>
                   <Button
                     variant='outline-accent'
                     size='sm'
-                    className='mx-3'
                     href={project.linkGH}
                     target='_blank'
                   >
-                    GitHub
+                    <span>GitHub</span>
                   </Button>
                 </div>
               </div>
