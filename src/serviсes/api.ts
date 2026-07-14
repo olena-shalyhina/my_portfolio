@@ -8,10 +8,11 @@ import react from '../assets/icons/react.svg';
 import redux from '../assets/icons/redux.svg';
 import figma from '../assets/icons/figma.svg';
 import wordpress from '../assets/icons/wordpress.svg';
-import Starfish from '../assets/starfish.jpg';
+// import Starfish from '../assets/starfish.jpg';
+import Coral from '../assets/Coral_4.png';
 import ShipmentsCrud from '../assets/shipments-crud.jpg';
 import PriceCalculate from '../assets/price-calculate.jpg';
-import Weather from '../assets/weather2.jpg';
+import Weather from '../assets/weather.jpg';
 import BookStore from '../assets/book-store.jpg';
 
 export const icons = [react, redux, html, node, js, css, git, figma, wordpress];
@@ -42,8 +43,8 @@ export const skills = [
 
 export const projects: IProject[] = [
   {
-    name: 'Starfish Restaurant',
-    img: Starfish,
+    name: 'Restaurant React',
+    img: Coral,
     skills: [
       'Vite',
       'TypeScript',

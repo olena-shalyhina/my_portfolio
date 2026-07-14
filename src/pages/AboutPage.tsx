@@ -19,7 +19,7 @@ export const AboutPage: FC = () => {
                   <strong>Frontend Engineer</strong> — Commercial IT Company
                   (NDA)
                   <br />
-                  Jan 2025 – Present · Tallinn
+                  Mar 2025 – Apr 2026 · Tallinn
                 </li>
                 <hr />
                 <li className='text-light py-0 py-lg-2 py-xxl-0'>
