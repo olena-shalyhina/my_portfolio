@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import logo from '../assets/SH.jpg';
+import logo from '../assets/new_logo.png';
 import myPhoto from '../assets/my-photo.jpg';
 import '../styles/homePage.scss';
 
@@ -26,7 +26,7 @@ export const HomePage: FC = () => {
           </div>
         </div>
 
-        <p className='text-light bg-info p-3 p-xxl-4 home_description border border-secondary rounded-4'>
+        <div className='text-light bg-info p-3 p-xxl-4 home_description border border-secondary rounded-4'>
           I have commercial experience in building modern mobile and web
           interfaces. I work with React, React Native, TypeScript, Redux
           Toolkit, React Navigation and Expo, creating clean, responsive and
@@ -42,7 +42,7 @@ export const HomePage: FC = () => {
           technologies. I am committed to continuous growth as a frontend and
           mobile engineer and enjoy building interfaces that feel smooth,
           intuitive and modern.
-        </p>
+        </div>
       </div>
       <div className='col-md-12 col-lg-4 d-flex align-items-center justify-content-center  '>
         <img

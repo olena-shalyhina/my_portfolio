@@ -1,0 +1,68 @@
+@import './_custom.scss';
+
+.loader-overlay {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $dark;
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+}
+.loader-text {
+  color: $secondary;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: $text-shadow-md;
+  animation: fade 1.6s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+.loader-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 40px;
+
+  animation:
+    orbit 2.2s linear infinite,
+    glow 2.2s ease-in-out infinite;
+  transform-origin: center center;
+  @media (max-width: 600px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 4px $secondary);
+  }
+  50% {
+    filter: drop-shadow(0 0 28px $primary);
+  }
+  100% {
+    filter: drop-shadow(0 0 4px $secondary);
+  }
+}

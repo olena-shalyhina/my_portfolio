@@ -58,13 +58,11 @@ export const ContactsPage: FC = () => {
         </Form>
       </div>
       <a
-        href='mailto:elena.shaligina.v@gmail.com'
+        href='mailto:shalyhina.olena@gmail.com'
         className='contacts_section_form fs-6 fw-normal p-2 mb-1'
       >
-        <i className='bi bi-envelope-at text-light'>
-          {' '}
-          elena.shaligina.v@gmail.com
-        </i>
+        <i className='bi bi-envelope-at text-light'></i>
+        <span className='text-light'> shalyhina.olena@gmail.com</span>
       </a>
 
       <a
@@ -72,10 +70,8 @@ export const ContactsPage: FC = () => {
         className='contacts_section_form fw-normal p-2 mb-2'
         download
       >
-        <i className='bi bi-arrow-down-circle text-light'>
-          {' '}
-          Download CV in PDF
-        </i>
+        <i className='bi bi-arrow-down-circle text-light' />
+        <span className='text-light'> Download CV in PDF</span>
       </a>
       <div className='mt-3 d-lg-none d-xxl-block'>
         <img src={Location} alt='Location svg' width={18} height={18} />
