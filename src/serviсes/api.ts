@@ -10,7 +10,8 @@ import figma from '../assets/icons/figma.svg';
 import wordpress from '../assets/icons/wordpress.svg';
 import Coral from '../assets/Coral_2.png';
 import ShipmentsCrud from '../assets/shipments-crud.jpg';
-import PriceCalculate from '../assets/price-calculate.jpg';
+// import PriceCalculate from '../assets/price-calculate.png';
+import PriceCalculate from '../assets/price_calculate.png';
 import Weather from '../assets/weather.jpg';
 import BookStore from '../assets/book-store.jpg';
 
@@ -57,13 +58,7 @@ export const projects: IProject[] = [
     linkPreview: 'https://olena-shalyhina.github.io/online_restaurant_react/',
     linkGH: 'https://github.com/olena-shalyhina/online_restaurant_react',
   },
-  {
-    name: 'Shipments Crud Page',
-    img: ShipmentsCrud,
-    skills: ['React', 'Redux', 'Redux Thunk', 'React Bootstrap', 'Axios'],
-    linkPreview: 'https://olena-shalyhina.github.io/shipments_crud_page',
-    linkGH: 'https://github.com/olena-shalyhina/shipments_crud_page',
-  },
+
   {
     name: 'Price Calculate',
     img: PriceCalculate,
@@ -77,6 +72,13 @@ export const projects: IProject[] = [
     skills: ['React', 'Axios', 'HTML', 'CSS'],
     linkPreview: 'https://olena-shalyhina.github.io/weather-app/',
     linkGH: ' https://github.com/olena-shalyhina/weather-app',
+  },
+  {
+    name: 'Shipments Crud Page',
+    img: ShipmentsCrud,
+    skills: ['React', 'Redux', 'Redux Thunk', 'React Bootstrap', 'Axios'],
+    linkPreview: 'https://olena-shalyhina.github.io/shipments_crud_page',
+    linkGH: 'https://github.com/olena-shalyhina/shipments_crud_page',
   },
   {
     name: 'Bookstore',

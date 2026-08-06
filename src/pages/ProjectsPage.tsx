@@ -16,7 +16,7 @@ export const ProjectsPage: FC = () => {
                 style={{
                   backgroundImage: `url(${project.img})`,
                   backgroundSize: 'cover',
-                  backgroundPosition: 'start',
+                  backgroundPosition: 'center',
                 }}
               ></div>
               <div className='back d-flex flex-column align-items-center justify-content-between py-3  text-secondary border border-1 border-secondary'>
