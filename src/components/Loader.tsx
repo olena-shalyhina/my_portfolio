@@ -1,5 +1,5 @@
 import logoImage from '../assets/images/new_logo.png';
-import '../styles/loader.scss';
+import '../styles/Loader.scss';
 
 export const Loader = () => {
   return (

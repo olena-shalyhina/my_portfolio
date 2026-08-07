@@ -11,6 +11,7 @@ export const Header: FC = () => {
   const url = import.meta.env.BASE_URL;
   const location = useLocation();
   const activeLink = url + location.pathname.slice(1);
+  const isMeActive = location.pathname === '/' || location.pathname === '/me';
 
   const closeMenu = () => {
     setExpanded(false);
@@ -45,7 +46,7 @@ export const Header: FC = () => {
               to='/me'
               end
               onClick={closeMenu}
-              className={`nav-link ${activeLink === url + 'me' ? 'active' : ''}`}
+              className={`nav-link ${isMeActive ? 'active' : ''}`}
             >
               ME
             </Nav.Link>

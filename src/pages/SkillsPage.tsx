@@ -32,12 +32,12 @@ export const SkillsPage: FC = () => {
           </span>
         </div>
       </div>
-      <div className='skills_list_wrapper d-flex flex-wrap justify-content-evenly align-items-center gap-3  gap-xxl-4 py-3 '>
+      <div className='skills_list_wrapper d-flex flex-wrap justify-content-evenly align-items-center gap-3 gap-xxl-4 p-5'>
         {skills &&
           skills.map((skill) => (
             <div
               key={getUniqueId()}
-              className='skill_box bg-info d-flex justify-content-center align-items-center w-25 text-light fw-medium small'
+              className='skill_box bg-info d-flex justify-content-center align-items-center text-light fw-medium  text-uppercase border border-secondary rounded-5'
             >
               {skill}
             </div>

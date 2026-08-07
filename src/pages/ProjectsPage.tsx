@@ -7,10 +7,13 @@ export const ProjectsPage: FC = () => {
   return (
     <section className='skills_section d-flex flex-column  justify-content-between text-secondary my-2 my-xxl-3'>
       <h5 className='text-uppercase d-lg-none pb-3'>My projects</h5>
-      <div className='d-flex flex-wrap  justify-content-center  align-items-center gap-3 gap-xxl-4 py-3 py-xxl-0 my-xxl-0'>
+      <div className='d-flex flex-wrap justify-content-center  align-items-center gap-4 gap-lg-5 gap-xxl-4 py-3 py-xxl-0 my-xxl-0'>
         {projects &&
           projects.map((project) => (
-            <div className='card bg-dark' key={project.name}>
+            <div
+              className='card bg-dark col-11 col-md-5 col-lg-4 col-xxl-4'
+              key={project.name}
+            >
               <div
                 className='front border border-1 border-secondary'
                 style={{

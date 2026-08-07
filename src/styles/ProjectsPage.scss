@@ -2,18 +2,10 @@
 
 .card {
   position: relative;
-  width: 300px;
-  min-height: 190px;
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  position: relative;
   cursor: pointer;
-
-  @media (min-width: 780px) {
-    width: 380px;
-    min-height: 244px;
-  }
-  @media (min-width: 1320px) {
-    width: 446px;
-    min-height: 290px;
-  }
 
   .front,
   .back {

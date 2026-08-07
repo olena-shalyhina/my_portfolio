@@ -1,21 +1,15 @@
 import { FC } from 'react';
 import logo from '../assets/images/new_logo.png';
-import myPhoto from '../assets/images/my-photo.jpg';
-import '../styles/homePage.scss';
+import myPhoto from '../assets/images/my-photo.webp';
+import '../styles/HomePage.scss';
 
 export const HomePage: FC = () => {
   const url = import.meta.env.BASE_URL;
   return (
-    <section className='home_section row text-secondary d-flex align-items-center justify-content-center gap-5 my-3'>
-      <div className='col-md-12 col-lg-7 d-flex flex-column justify-content-start align-items-center gap-3 gap-xxl-4 padding px-lg-3'>
+    <section className='home_section row text-secondary d-flex align-items-end justify-content-center gap-5 my-3 mb-5 mb-lg-0'>
+      <div className='col-md-12 col-lg-6 col-xl-7 d-flex flex-column justify-content-start align-items-center gap-3 gap-xxl-4 padding px-lg-3 '>
         <a href={`${url}contacts`}>
-          <img
-            src={logo}
-            className='my_logo '
-            alt='My logo'
-            width='100'
-            height='auto'
-          />
+          <img src={logo} className='my_logo' alt='My logo' />
         </a>
         <div className='d-flex gap-4 align-items-center justify-content-center'>
           <div>
@@ -44,13 +38,12 @@ export const HomePage: FC = () => {
           intuitive and modern.
         </div>
       </div>
-      <div className='col-md-12 col-lg-4 d-flex align-items-center justify-content-center  '>
+      <div className='col-12 col-sm-8 col-lg-5 col-xl-4 d-flex align-items-center justify-content-center px-3 px-sm0'>
         <img
           className='home_img'
           src={myPhoto}
           alt='My photo'
-          width='300'
-          height='400'
+          loading='eager'
         />
       </div>
     </section>
