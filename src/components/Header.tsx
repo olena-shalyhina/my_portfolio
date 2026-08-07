@@ -40,7 +40,13 @@ export const Header: FC = () => {
 
         <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
           <Nav activeKey={activeLink} className='fs-5'>
-            <Nav.Link as={NavLink} to='/me' end onClick={closeMenu}>
+            <Nav.Link
+              as={NavLink}
+              to='/me'
+              end
+              onClick={closeMenu}
+              className={`nav-link ${activeLink === url + 'me' ? 'active' : ''}`}
+            >
               ME
             </Nav.Link>
 

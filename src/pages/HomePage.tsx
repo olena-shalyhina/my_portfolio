@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import logo from '../assets/new_logo.png';
-import myPhoto from '../assets/my-photo.jpg';
+import logo from '../assets/images/new_logo.png';
+import myPhoto from '../assets/images/my-photo.jpg';
 import '../styles/homePage.scss';
 
 export const HomePage: FC = () => {

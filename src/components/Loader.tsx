@@ -1,4 +1,4 @@
-import logoImage from '../assets/new_logo.png';
+import logoImage from '../assets/images/new_logo.png';
 import '../styles/loader.scss';
 
 export const Loader = () => {
