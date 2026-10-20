@@ -1,13 +1,14 @@
 import { FC } from 'react';
 import logo from '../assets/images/new_logo.png';
-import myPhoto from '../assets/images/my-photo.webp';
+import myPhoto from '../assets/images/my_photo.jpeg';
+// import myPhoto from '../assets/images/my-photo.webp';
 import '../styles/HomePage.scss';
 
 export const HomePage: FC = () => {
   const url = import.meta.env.BASE_URL;
   return (
-    <section className='home_section row text-secondary d-flex align-items-end justify-content-center gap-5 my-3 mb-5 mb-lg-0'>
-      <div className='col-md-12 col-lg-6 col-xl-7 d-flex flex-column justify-content-start align-items-center gap-3 gap-xxl-4 padding px-lg-3 '>
+    <section className='home_section row text-secondary d-flex align-items-end justify-content-between gap-5 my-2 mb-5 mb-lg-0'>
+      <div className='col-md-12 col-lg-7 col-xl-7 d-flex flex-column justify-content-start align-items-center gap-3 gap-xxl-4 padding px-lg-3 '>
         <a href={`${url}contacts`}>
           <img src={logo} className='my_logo' alt='My logo' />
         </a>
@@ -20,7 +21,7 @@ export const HomePage: FC = () => {
           </div>
         </div>
 
-        <div className='text-light bg-info p-3 p-xxl-4 home_description border border-secondary rounded-4'>
+        <div className='text-light  py-1 p-xxl-4 home_description '>
           I have commercial experience in building modern mobile and web
           interfaces. I work with React, React Native, TypeScript, Redux
           Toolkit, React Navigation and Expo, creating clean, responsive and
@@ -38,7 +39,7 @@ export const HomePage: FC = () => {
           intuitive and modern.
         </div>
       </div>
-      <div className='col-12 col-sm-8 col-lg-5 col-xl-4 d-flex align-items-center justify-content-center px-3 px-sm0'>
+      <div className='col-12 col-sm-8 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center px-3 px-sm0'>
         <img
           className='home_img'
           src={myPhoto}

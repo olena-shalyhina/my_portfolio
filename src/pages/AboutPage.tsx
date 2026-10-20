@@ -10,7 +10,7 @@ export const AboutPage: FC = () => {
       <div className='container'>
         <div className='row align-items-stretch justify-content-between'>
           {/* LEFT COLUMN */}
-          <div className='col-12 col-lg-6 d-flex flex-column gap-3 gap-xxl-4 align-items-center justify-content-between'>
+          <div className='col-12 col-lg-5 d-flex flex-column gap-3 gap-xxl-4 align-items-center justify-content-between'>
             {/* EXPERIENCE */}
             <div className='about_experience w-100 p-3'>
               <h6 className='text-accent'>EXPERIENCE</h6>
@@ -74,7 +74,7 @@ export const AboutPage: FC = () => {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className='col-12 col-lg-6 d-flex align-items-center my-3 my-lg-0 justify-content-center'>
+          <div className='col-12 col-lg-7 d-flex align-items-center my-3 my-lg-0 justify-content-center'>
             <div className='about_responsibilities d-flex flex-column  p-3 w-100 h-100'>
               <h6 className='text-accent text-uppercase'>
                 Core Responsibilities
