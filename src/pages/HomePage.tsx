@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import logo from '../assets/images/new_logo.png';
 import myPhoto from '../assets/images/my_photo.jpeg';
 // import myPhoto from '../assets/images/my-photo.webp';
 import '../styles/HomePage.scss';
@@ -7,45 +6,61 @@ import '../styles/HomePage.scss';
 export const HomePage: FC = () => {
   const url = import.meta.env.BASE_URL;
   return (
-    <section className='home_section row text-secondary d-flex align-items-end justify-content-between gap-5 my-2 mb-5 mb-lg-0'>
-      <div className='col-md-12 col-lg-7 col-xl-7 d-flex flex-column justify-content-start align-items-center gap-3 gap-xxl-4 padding px-lg-3 '>
-        <a href={`${url}contacts`}>
-          <img src={logo} className='my_logo' alt='My logo' />
-        </a>
-        <div className='d-flex gap-4 align-items-center justify-content-center'>
-          <div>
-            <h4 className='text-secondary fs-3'>Welcome! I’m </h4>
-            <h2 className='text-accent fs-3'>
-              Frontend & React Native Engineer
-            </h2>
+    <section className='home_section container py-4 py-lg-5'>
+      <div className='row align-items-center g-5'>
+        <div className='col-12 col-sm-8 col-lg-4 mx-auto d-flex align-items-center justify-content-center'>
+          <img
+            className='home_img'
+            src={myPhoto}
+            alt='My photo'
+            loading='eager'
+          />
+        </div>
+        <div className='col-12 col-lg-7 offset-lg-1 text-start'>
+          {/* <p className='text-secondary fs-3 fw-semibold mb-3'>
+            <span className='me-2' aria-hidden='true'>●</span>Welcome! I’m
+          </p> */}
+          <h1 className='display-3 fw-bold text-light lh-1 mb-4'>
+            Frontend &amp; <span className='text-primary'>Mobile Software</span>{' '}
+            Engineer
+          </h1>
+          <p className='lead text-light lh-lg mb-4'>
+            I build <strong>modern web and mobile applications</strong> with
+            React, React Native, and TypeScript — combining clean code,
+            thoughtful UX, and consistent design systems.
+          </p>
+          <div className='d-flex flex-wrap gap-3 mb-4'>
+            <a
+              className='btn btn-outline-accent btn-lg'
+              href={`${url}projects`}
+            >
+              Explore my work
+            </a>
+            <a
+              className='btn btn-outline-accent btn-lg'
+              href={`${url}contacts`}
+            >
+              Let’s talk
+            </a>
           </div>
+          <ul className='list-unstyled d-flex flex-wrap gap-2 gap-lg-3 mb-4'>
+            <li>
+              <span className='badge rounded-pill bg-transparent border border-primary text-primary fs-6 p-3'>
+                Commercial experience
+              </span>
+            </li>
+            <li>
+              <span className='badge rounded-pill bg-transparent border border-primary text-primary fs-6 p-3'>
+                Reusable UI architecture
+              </span>
+            </li>
+            <li>
+              <span className='badge rounded-pill bg-transparent border border-primary text-primary fs-6 p-3'>
+                Continuous growth
+              </span>
+            </li>
+          </ul>
         </div>
-
-        <div className='text-light  py-1 p-xxl-4 home_description '>
-          I have commercial experience in building modern mobile and web
-          interfaces. I work with React, React Native, TypeScript, Redux
-          Toolkit, React Navigation and Expo, creating clean, responsive and
-          user‑friendly UI based on design systems and component‑driven
-          architecture.
-          <hr className='text-secondary' />
-          In my recent commercial projects, I developed adaptive layouts,
-          implemented theming, improved navigation flows, integrated REST APIs,
-          and contributed to reusable UI components. I focus on code quality,
-          stability, and delivering consistent user experience across devices.
-          <hr className='text-secondary' />I work confidently both independently
-          and in a team, communicate clearly, and quickly learn new tools and
-          technologies. I am committed to continuous growth as a frontend and
-          mobile engineer and enjoy building interfaces that feel smooth,
-          intuitive and modern.
-        </div>
-      </div>
-      <div className='col-12 col-sm-8 col-lg-4 col-xl-4 mx-auto mx-lg-0 d-flex align-items-center justify-content-center px-3 px-sm0'>
-        <img
-          className='home_img'
-          src={myPhoto}
-          alt='My photo'
-          loading='eager'
-        />
       </div>
     </section>
   );

@@ -40,18 +40,3 @@
   }
 }
 
-.my_logo {
-  height: auto;
-  width: 100px;
-  border-radius: 50%;
-  border: $border-lg;
-  overflow: hidden;
-  filter: $drop-shadow-md;
-
-  @media (min-width: 992px) {
-    width: 80px;
-  }
-  @media (min-width: 1320px) {
-    width: 140px;
-  }
-}

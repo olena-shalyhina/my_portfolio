@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink, useLocation } from 'react-router-dom';
+import logo from '../assets/images/SH.jpg';
 import '../App.scss';
 
 export const Header: FC = () => {
@@ -31,6 +32,13 @@ export const Header: FC = () => {
           onClick={closeMenu}
           className='text-uppercase ps-2 d-flex align-items-center gap-2 fs-4'
         >
+          <img
+            src={logo}
+            alt=''
+            width='40'
+            height='40'
+            className='rounded-circle border border-secondary'
+          />
           OLENA SHALYHINA
         </Navbar.Brand>
 

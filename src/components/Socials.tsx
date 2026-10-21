@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 
 export const Socials: FC = () => {
   return (
-    <div className='d-flex justify-content-сenter gap-3 '>
+    <div className='d-flex justify-content-center gap-3'>
       <Button
         variant='outline-accent'
         size='sm'

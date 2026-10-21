@@ -50,7 +50,7 @@ const experience = [
 
 export const AboutPage: FC = () => {
   return (
-    <section className='about_section text-secondary mb-5 my-xxl-5'>
+    <section className='about_section text-secondary mt-3 mb-5 my-xxl-5'>
       <h5 className='text-uppercase d-lg-none'>About Me</h5>
       <div className='container'>
         <div className='row g-4 align-items-stretch'>
