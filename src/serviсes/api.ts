@@ -11,7 +11,7 @@ import wordpress from '../assets/icons/wordpress.svg';
 import Coral from '../assets/images/coral1.png';
 import ShipmentsCrud from '../assets/images/shipments-crud.jpg';
 import PriceCalculate from '../assets/images/price_calculate.png';
-import Weather from '../assets/images/weather.jpg';
+import Weather from '../assets/images/weather.png';
 
 export const icons = [react, redux, html, node, js, css, git, figma, wordpress];
 
