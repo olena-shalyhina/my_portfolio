@@ -3,12 +3,13 @@
 
 $navbar-height: 60px;
 #root {
-  width: 1400px;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   background-color: inherit;
   background-color: $dark;
+  overflow-x: clip;
 }
 .main_container {
   width: 100%;

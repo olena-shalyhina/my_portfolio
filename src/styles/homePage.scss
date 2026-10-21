@@ -6,9 +6,11 @@
 
 .home_img {
   width: 100%;
+  max-width: 440px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  min-height: 430px;
+  height: auto;
+  min-height: 0;
   display: block;
   border: $border-sm;
   border-radius: 12px 12px 12px 50%;

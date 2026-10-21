@@ -1,13 +1,11 @@
 :root {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  height: 100%;
   font-size: 12px;
   letter-spacing: 1.3px;
 }
 
 body {
-  height: 100vh;
   display: flex;
   min-width: 320px;
   min-height: 100vh;

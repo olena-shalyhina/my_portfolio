@@ -4,31 +4,83 @@
 .about_languages,
 .about_responsibilities,
 .about_certificates {
-  border: $border-sm;
   background-color: $info;
-  border-radius: 12px;
-}
-.certificate img {
-  transition:
-    filter 0.4s ease,
-    transform 0.4s ease;
 }
 
-.custom-list {
+.about_experience {
+  border: $border-sm;
+  border-radius: 12px;
+}
+
+.experience-item {
+  border-radius: 0 10px 10px 0;
+  background: linear-gradient(
+    110deg,
+    darken($info, 8%),
+    rgba($secondary, 0.14)
+  );
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+
+  &:hover {
+    transform: translateX(4px);
+    background-color: rgba($secondary, 0.22);
+    box-shadow: 0 0.4rem 1.2rem rgba($secondary, 0.2);
+  }
+}
+
+.about_experience_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
   li {
-    position: relative;
-    padding-left: 28px;
-    list-style: none;
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 4px;
-      width: 12px;
-      height: 12px;
-      background-image: url('/src/assets/monitor.jpg');
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+    border-left-color: $accent !important;
+  }
+}
+.about_responsibilities {
+  background:
+    radial-gradient(ellipse at 100% 0, rgba($secondary, 0.15), transparent 62%),
+    $info;
+}
+
+.responsibility-marker {
+  width: 1rem;
+  height: 1rem;
+  background-color: $accent;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-6v2h3v2H7v-2h3v-2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v11h16V5H4Z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.responsibility-item {
+  background: linear-gradient(
+    110deg,
+    darken($info, 8%),
+    rgba($secondary, 0.14)
+  );
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    background-color: rgba($secondary, 0.22);
+    box-shadow: 0 0.4rem 1.2rem rgba($secondary, 0.2);
+  }
+}
+
+.about_certificates .certificate {
+  width: 92px;
+  height: 132px;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .about_certificates .certificate {
+    width: 70px;
+    height: 100px;
   }
 }

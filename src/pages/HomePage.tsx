@@ -39,7 +39,7 @@ export const HomePage: FC = () => {
           intuitive and modern.
         </div>
       </div>
-      <div className='col-12 col-sm-8 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center px-3 px-sm0'>
+      <div className='col-12 col-sm-8 col-lg-4 col-xl-4 mx-auto mx-lg-0 d-flex align-items-center justify-content-center px-3 px-sm0'>
         <img
           className='home_img'
           src={myPhoto}

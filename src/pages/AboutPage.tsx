@@ -3,118 +3,141 @@ import English from '../assets/images/certificate-en.jpg';
 import React from '../assets/images/certificate-react.jpg';
 import '../styles/aboutPage.scss';
 
+const responsibilities = [
+  'Building web and mobile interfaces with React, React Native, and modern frontend tooling.',
+  'Implementing screens, navigation flows, and reusable UI components based on Figma designs, ensuring visual consistency.',
+  'Creating and maintaining a custom design system with reusable components, design tokens, theming, and scalable interface architecture.',
+  'Integrating REST APIs and backend services, handling asynchronous data flows, and managing application data with TypeScript.',
+  'Creating responsive, adaptive, and cross-browser layouts, including light and dark themes and localization (i18n).',
+  'Developing interactive UI elements and improving navigation, user flows, and overall UX.',
+  'Improving application performance, stability, and maintainability.',
+  'Creating and maintaining technical documentation for frontend features, components, and workflows.',
+  'Collaborating through engineering discussions, code reviews, and established team workflows.',
+  'Using AI-assisted development tools to support coding and problem-solving tasks.',
+];
+
+const languages = [
+  { name: 'Ukrainian', level: 'C2' },
+  { name: 'English', level: 'B1' },
+  { name: 'Estonian', level: 'A2' },
+  { name: 'Russian', level: 'C2' },
+];
+
+const experience = [
+  {
+    title: 'Career break',
+    dates: 'May 2026 – Present',
+    description:
+      'Focused on professional development and building an independent full-stack language-learning application.',
+  },
+  {
+    title: 'Software Engineer',
+    organization: 'Commercial IT Company (NDA)',
+    dates: 'Mar 2025 – Apr 2026 · Tallinn',
+  },
+  {
+    title: 'Career break',
+    dates: 'Apr 2024 – Feb 2025',
+    description:
+      'Focused on frontend development, personal projects, and strengthening my technical skills while preparing for my next professional opportunity.',
+  },
+  {
+    title: 'Frontend Developer',
+    organization: 'Your Price Booking',
+    dates: 'Apr 2023 – Mar 2024 · Kyiv, Ukraine · Remote',
+  },
+];
+
 export const AboutPage: FC = () => {
   return (
-    <section className='about_section text-secondary mb-3 my-xxl-5'>
+    <section className='about_section text-secondary mb-5 my-xxl-5'>
       <h5 className='text-uppercase d-lg-none'>About Me</h5>
       <div className='container'>
-        <div className='row align-items-stretch justify-content-between'>
-          {/* LEFT COLUMN */}
-          <div className='col-12 col-lg-5 d-flex flex-column gap-3 gap-xxl-4 align-items-center justify-content-between'>
-            {/* EXPERIENCE */}
+        <div className='row g-4 align-items-stretch'>
+          <div className='col-12 col-lg-5 d-flex flex-column gap-4 align-items-between'>
             <div className='about_experience w-100 p-3'>
               <h6 className='text-accent'>EXPERIENCE</h6>
-              <ul className='text-start mb-3'>
-                <li className='text-light py-0 py-lg-2'>
-                  <strong>Frontend Engineer</strong> — Commercial IT Company
-                  (NDA)
-                  <br />
-                  Mar 2025 – Apr 2026 · Tallinn
-                </li>
-                <hr />
-                <li className='text-light py-0 py-lg-2 py-xxl-0'>
-                  <strong>Frontend Developer</strong> — Your Price Booking
-                  <br />
-                  Apr 2023 – Mar 2024 · Kyiv, Ukraine · Remote
-                </li>
+              <ul className='about_experience_list text-start list-unstyled p-0 mb-3'>
+                {experience.map(
+                  ({ title, organization, dates, description }) => (
+                    <li
+                      className='experience-item text-light my-2 py-2 px-3 border-start border-3'
+                      key={`${title}-${dates}`}
+                    >
+                      <strong>{title}</strong>
+                      {organization && <> — {organization}</>}
+                      <br />
+                      {dates}
+                      {description && (
+                        <p className='mt-2 mb-0'>{description}</p>
+                      )}
+                    </li>
+                  ),
+                )}
               </ul>
             </div>
 
-            {/* CERTIFICATES + LANGUAGES */}
-            <div className='row w-100 justify-content-between align-items-between'>
-              {/* CERTIFICATES */}
-              <div className='col-12 col-md-7 d-flex flex-column about_certificates p-3'>
-                <h6 className='text-accent pb-2'>CERTIFICATES</h6>
-                <div className='d-flex gap-2 justify-content-evenly my-4'>
-                  <a href='https://drive.google.com/file/d/1KkIfmW8q90h8c53Eu7JLyvoj3jL-aVmr/view?usp=drive_link'>
-                    <img
-                      src={English}
-                      alt='Certificate English B1'
-                      width='90'
-                      height='140'
-                      className='certificate'
-                    />
-                  </a>
-                  <a href='https://drive.google.com/file/d/1zJAMv47RtC5DCiFeMUfrsLCi1i22cy6X/view?usp=drive_link'>
-                    <img
-                      src={React}
-                      alt='Certificate React'
-                      width='90'
-                      height='140'
-                      className='certificate'
-                    />
-                  </a>
+            <div className='row g-3'>
+              <div className='col-12 col-sm-6 '>
+                <div className='about_certificates h-100 p-3 rounded-3 border border-secondary'>
+                  <h6 className='text-accent pb-2'>CERTIFICATES</h6>
+                  <div className='d-flex gap-3 justify-content-center my-4'>
+                    <a href='https://drive.google.com/file/d/1KkIfmW8q90h8c53Eu7JLyvoj3jL-aVmr/view?usp=drive_link'>
+                      <img
+                        src={English}
+                        alt='Certificate English B1'
+                        width='92'
+                        height='132'
+                        className='certificate'
+                      />
+                    </a>
+                    <a href='https://drive.google.com/file/d/1zJAMv47RtC5DCiFeMUfrsLCi1i22cy6X/view?usp=drive_link'>
+                      <img
+                        src={React}
+                        alt='Certificate React'
+                        width='92'
+                        height='132'
+                        className='certificate'
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-
-              {/* LANGUAGES */}
-              <div className='col-12 col-md-4 mt-3 mt-md-0 d-flex flex-column about_languages p-3'>
-                <h6 className='text-accent'>LANGUAGES</h6>
-                <ul className='mt-auto'>
-                  <li className='text-light'>Ukrainian (C2)</li>
-                  <hr />
-                  <li className='text-light'>English (B1 Intermediate)</li>
-                  <hr />
-                  <li className='text-light'>Estonian (A2)</li>
-                  <hr />
-                  <li className='text-light'>Russian (C2)</li>
-                </ul>
+              <div className='col-12 col-sm-6'>
+                <div className='about_languages h-100 p-3 rounded-3 border border-secondary'>
+                  <h6 className='text-accent'>LANGUAGES</h6>
+                  <div className='d-flex flex-column gap-3'>
+                    {languages.map(({ name, level }) => (
+                      <span
+                        className='d-flex justify-content-between rounded-pill border border-secondary px-3 py-2 text-light'
+                        key={name}
+                      >
+                        {name} <b className='text-accent'>{level}</b>
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* RIGHT COLUMN */}
-          <div className='col-12 col-lg-7 d-flex align-items-center my-3 my-lg-0 justify-content-center'>
-            <div className='about_responsibilities d-flex flex-column  p-3 w-100 h-100'>
+          <div className='col-12 col-lg-7'>
+            <div className='about_responsibilities h-100 p-3 rounded-3 border border-secondary d-flex flex-column'>
               <h6 className='text-accent text-uppercase'>
                 Core Responsibilities
               </h6>
-              <ul className='custom-list text-start d-flex flex-column'>
-                <li className='text-light'>
-                  Building web and mobile interfaces with React, React Native,
-                  and modern frontend tooling.
-                </li>
-                <hr />
-                <li className='text-light'>
-                  Implementing screens, navigation flows, and reusable UI
-                  components.
-                </li>
-                <hr />
-                <li className='text-light'>
-                  Integrating REST APIs, managing data, and ensuring type‑safe
-                  logic with TypeScript.
-                </li>
-                <hr />
-                <li className='text-light'>
-                  Creating adaptive, responsive, and cross‑browser layouts.
-                </li>
-                <hr />
-                <li className='text-light'>
-                  Developing interactive UI elements and improving user flows.
-                </li>
-                <hr />
-                <li className='text-light'>
-                  Optimizing performance, stability, and overall UX.
-                </li>
-                <hr />
-                <li className='text-light'>
-                  Contributing to internal UI libraries and interface
-                  architecture.
-                </li>
-                <hr />
-                <li className='text-light'>
-                  Participating in engineering discussions and code reviews.
-                </li>
+              <ul className='row row-cols-1 row-cols-sm-2 g-3 my-2 p-0 flex-grow-1 align-content-stretch'>
+                {responsibilities.map((responsibility) => (
+                  <li className='col d-flex' key={responsibility}>
+                    <div className='responsibility-item d-flex align-items-start gap-2 w-100 p-3 rounded-3 border border-secondary border-opacity-50 text-light text-start'>
+                      <span
+                        className='responsibility-marker flex-shrink-0 mt-1'
+                        aria-hidden='true'
+                      />
+                      <span>{responsibility}</span>
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
