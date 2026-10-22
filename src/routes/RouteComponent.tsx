@@ -9,8 +9,8 @@ import { ProjectsPage } from '../pages/ProjectsPage';
 export const RouteComponent: FC = () => {
   return (
     <Routes>
-      <Route index element={<Navigate to='/me' replace />} />
-      <Route path={`me`} element={<HomePage />} />
+      <Route index element={<Navigate to='/home' replace />} />
+      <Route path={`home`} element={<HomePage />} />
       <Route path={`about`} element={<AboutPage />} />
       <Route path={`skills`} element={<SkillsPage />} />
       <Route path={`projects`} element={<ProjectsPage />} />

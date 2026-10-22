@@ -12,7 +12,7 @@ export const Header: FC = () => {
   const url = import.meta.env.BASE_URL;
   const location = useLocation();
   const activeLink = url + location.pathname.slice(1);
-  const isMeActive = location.pathname === '/' || location.pathname === '/me';
+  const isMeActive = location.pathname === '/' || location.pathname === '/home';
 
   const closeMenu = () => {
     setExpanded(false);
@@ -28,7 +28,7 @@ export const Header: FC = () => {
       <Container>
         <Navbar.Brand
           as={NavLink}
-          to='/me'
+          to='/home'
           onClick={closeMenu}
           className='text-uppercase ps-2 d-flex align-items-center gap-2 fs-4'
         >
@@ -51,7 +51,7 @@ export const Header: FC = () => {
           <Nav activeKey={activeLink} className='fs-5'>
             <Nav.Link
               as={NavLink}
-              to='/me'
+              to='/home'
               end
               onClick={closeMenu}
               className={`nav-link ${isMeActive ? 'active' : ''}`}
