@@ -27,7 +27,7 @@ export const HomePage: FC = () => {
         </div>
         <div className='col-12 col-lg-7 offset-lg-1 text-start'>
           <p className='text-secondary fs-3 fw-semibold mb-3'>Welcome! I’m</p>
-          <h1 className='page_title display-3 fw-bold text-light lh-1 mb-4'>
+          <h1 className='home_title page_title display-3 fw-bold text-light lh-1 mb-4'>
             Frontend &amp; <span className='text-primary'>Mobile Software</span>{' '}
             Engineer
           </h1>

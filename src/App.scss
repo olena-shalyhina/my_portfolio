@@ -59,8 +59,24 @@ a:active {
 
 .navbar-brand:hover,
 .navbar-brand:active {
-  animation: none;
+  animation: grow_txt 1s linear 0s infinite alternate;
   transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a:hover,
+  a:active {
+    animation: none;
+  }
+
+  .navbar-brand {
+    transition: none;
+  }
+
+  .navbar-brand:hover,
+  .navbar-brand:active {
+    transform: none;
+  }
 }
 
 @keyframes grow_txt {

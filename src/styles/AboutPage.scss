@@ -95,6 +95,18 @@
   .about_certificates .certificate {
     animation: none;
   }
+
+  .experience-item,
+  .responsibility-item {
+    transition: none;
+  }
+
+  .experience-item:hover,
+  .experience-item:active,
+  .responsibility-item:hover,
+  .responsibility-item:active {
+    transform: none;
+  }
 }
 
 @media (max-width: 1200px) {
