@@ -8,18 +8,23 @@
 }
 
 .skill_ikons_wrapper {
+  width: 100%;
+  height: max(56px, 8vw);
   margin: 5px auto;
   overflow: hidden;
 
   div {
     width: 200%;
+    height: 100%;
     animation: marquee 10s linear infinite;
     display: flex;
 
     span {
       width: 100%;
+      height: 100%;
       display: flex;
       justify-content: space-around;
+      align-items: center;
 
       img {
         width: 8%;
@@ -38,6 +43,7 @@
 
 .skills_list_wrapper {
   min-height: 25em;
+  align-content: center;
   border-radius: 12px;
   background: linear-gradient(
     225deg,
@@ -47,7 +53,7 @@
   );
 
   .skill_box {
-    height: 3em;
+    height: 2.6rem;
     min-width: 280px;
     border-radius: 3em;
     box-shadow:
@@ -55,6 +61,30 @@
       0 2px 5px rgba(126, 69, 238, 0.16);
     animation: skill-badge-enter 800ms cubic-bezier(0.16, 1, 0.3, 1) both;
   }
+}
+
+.skills_section {
+  gap: 1rem;
+}
+
+@media (min-width: 992px) and (max-width: 1024x) {
+  .skills_section {
+    gap: 0.5rem;
+  }
+
+  .skill_ikons_wrapper {
+    margin-block: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .skills_section {
+    gap: 3rem;
+  }
+}
+
+.skills_section .page_title {
+  margin-bottom: 0;
 }
 
 @keyframes skill-badge-enter {

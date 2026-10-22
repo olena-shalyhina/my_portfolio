@@ -5,10 +5,10 @@ import '../styles/projectsPage.scss';
 export const ProjectsPage: FC = () => {
   return (
     <section
-      className='projects-section text-secondary my-2 my-xxl-3'
+      className='projects-section text-secondary mb-2 mb-xxl-3'
       aria-labelledby='projects-title'
     >
-      <h2 id='projects-title' className='text-uppercase h5 pb-2 d-lg-none'>
+      <h2 id='projects-title' className='page_title text-uppercase h5 d-lg-none'>
         My projects
       </h2>
       <div className='projects-grid'>
@@ -23,6 +23,7 @@ export const ProjectsPage: FC = () => {
                 src={project.img}
                 alt={`${project.name} project preview`}
                 loading='lazy'
+                decoding='async'
               />
             </div>
             <div className='project-card__content'>

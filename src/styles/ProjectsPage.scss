@@ -7,6 +7,20 @@
   padding: 1rem 0 2rem;
 }
 
+.route_content > .projects-section {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 992px) {
   .projects-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));

@@ -29,8 +29,8 @@ const skills = [
 
 export const SkillsPage: FC = () => {
   return (
-    <section className='skills_section text-secondary my-3 d-flex flex-column gap-3 gap-xxl-5'>
-      <h3 className='text-uppercase text-secondary d-lg-none'>My skills</h3>
+    <section className='skills_section text-secondary mb-3 d-flex flex-column'>
+      <h3 className='page_title text-uppercase text-secondary d-lg-none'>My skills</h3>
       <div className='skill_ikons_wrapper'>
         <div>
           <span>

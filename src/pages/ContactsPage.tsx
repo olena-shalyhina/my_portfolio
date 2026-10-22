@@ -10,13 +10,13 @@ export const ContactsPage: FC = () => {
   const [result, setResult] = useState<string>('');
 
   return (
-    <section className='contacts_section d-flex flex-column align-items-center text-secondary gap-3 gap-xxl-5 my-3 my-lg-1'>
-      <h5 className='text-uppercase d-lg-none'>My contacts</h5>
-      <div className='contacts_section_form p-3'>
+    <section className='contacts_section d-flex flex-column align-items-center text-secondary gap-3 gap-xxl-5 mb-3 mb-lg-1'>
+      <h5 className='page_title text-uppercase d-lg-none'>My contacts</h5>
+      <div className='contacts_section_form p-4'>
         <h3 className='fs-6 fs-md-5 fs-lg-4'>Get in touch</h3>
 
         <Form className='mx-1' onSubmit={(event) => onSubmit(event, setResult)}>
-          <Form.Group className='text-light mb-2' controlId='Name1'>
+          <Form.Group className='text-light mb-3' controlId='Name1'>
             <Form.Label>Your name</Form.Label>
             <Form.Control
               type='text'
@@ -26,7 +26,7 @@ export const ContactsPage: FC = () => {
               className='inputGroup-sizing-sm'
             />
           </Form.Group>
-          <Form.Group className='text-light mb-2' controlId='Email1'>
+          <Form.Group className='text-light mb-3' controlId='Email1'>
             <Form.Label>Email address</Form.Label>
             <Form.Control
               type='email'
@@ -35,7 +35,7 @@ export const ContactsPage: FC = () => {
               name='email'
             />
           </Form.Group>
-          <Form.Group className='text-light mb-2' controlId='Textarea1'>
+          <Form.Group className='text-light mb-3' controlId='Textarea1'>
             <Form.Label>Message</Form.Label>
             <Form.Control
               as='textarea'
@@ -49,7 +49,7 @@ export const ContactsPage: FC = () => {
 
           <Button
             variant='outline-accent'
-            className='fs-5  w-100 mb-2'
+            className='contacts_submit fs-5 w-100 mb-2'
             type='submit'
           >
             Submit

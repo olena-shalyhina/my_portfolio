@@ -1,13 +1,42 @@
+@import './_custom.scss';
+
 .contacts_section_form {
   width: 300px;
-  border: 2px solid;
-  border-image-source: linear-gradient(
-    225deg,
-    #420aa3 22%,
-    rgba(233, 94, 7, 0.69) 53%,
-    #535bf2 82%
-  );
-  border-image-slice: 1;
+  border: 2px solid transparent;
+  border-radius: 0.75rem;
+  background:
+    linear-gradient($dark, $dark) padding-box,
+    linear-gradient(
+      225deg,
+      #420aa3 22%,
+      rgba(233, 94, 7, 0.69) 53%,
+      #535bf2 82%
+    ) border-box;
+}
+
+.contacts_submit {
+  border: 2px solid transparent !important;
+  border-radius: 0.75rem !important;
+  background:
+    linear-gradient($dark, $dark) padding-box,
+    linear-gradient(
+      225deg,
+      #420aa3 22%,
+      rgba(233, 94, 7, 0.69) 53%,
+      #535bf2 82%
+    ) border-box !important;
+}
+
+.contacts_submit:hover,
+.contacts_submit:focus-visible {
+  background:
+    linear-gradient(darken($dark, 3%), darken($dark, 3%)) padding-box,
+    linear-gradient(
+      225deg,
+      #420aa3 22%,
+      rgba(233, 94, 7, 0.69) 53%,
+      #535bf2 82%
+    ) border-box !important;
 }
 
 .form-control::placeholder {

@@ -1,6 +1,8 @@
 import { FC } from 'react';
-import English from '../assets/images/certificate-en.jpg';
-import React from '../assets/images/certificate-react.jpg';
+import English from '../assets/images/certificate-en.webp';
+import React from '../assets/images/certificate-react.webp';
+import EnglishFull from '../assets/images/certificate-en.jpg';
+import ReactFull from '../assets/images/certificate-react.jpg';
 import '../styles/aboutPage.scss';
 
 const responsibilities = [
@@ -50,8 +52,8 @@ const experience = [
 
 export const AboutPage: FC = () => {
   return (
-    <section className='about_section text-secondary mt-3 mb-5 my-xxl-5'>
-      <h5 className='text-uppercase d-lg-none'>About Me</h5>
+    <section className='about_section text-secondary mb-5 mb-xxl-5'>
+      <h5 className='page_title text-uppercase d-lg-none'>About Me</h5>
       <div className='container'>
         <div className='row g-4 align-items-stretch'>
           <div className='col-12 col-lg-5 d-flex flex-column gap-4 align-items-between'>
@@ -82,22 +84,24 @@ export const AboutPage: FC = () => {
                 <div className='about_certificates h-100 p-3 rounded-3 border border-secondary'>
                   <h6 className='text-accent pb-2'>CERTIFICATES</h6>
                   <div className='d-flex gap-3 justify-content-center my-4'>
-                    <a href='https://drive.google.com/file/d/1KkIfmW8q90h8c53Eu7JLyvoj3jL-aVmr/view?usp=drive_link'>
+                    <a href={EnglishFull} target='_blank' rel='noopener noreferrer'>
                       <img
                         src={English}
                         alt='Certificate English B1'
                         width='92'
                         height='132'
                         className='certificate'
+                        decoding='async'
                       />
                     </a>
-                    <a href='https://drive.google.com/file/d/1zJAMv47RtC5DCiFeMUfrsLCi1i22cy6X/view?usp=drive_link'>
+                    <a href={ReactFull} target='_blank' rel='noopener noreferrer'>
                       <img
                         src={React}
                         alt='Certificate React'
                         width='92'
                         height='132'
                         className='certificate'
+                        decoding='async'
                       />
                     </a>
                   </div>

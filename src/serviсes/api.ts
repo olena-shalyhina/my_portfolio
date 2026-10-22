@@ -8,10 +8,10 @@ import react from '../assets/icons/react.svg';
 import redux from '../assets/icons/redux.svg';
 import figma from '../assets/icons/figma.svg';
 import wordpress from '../assets/icons/wordpress.svg';
-import Coral from '../assets/images/coral1.png';
-import ShipmentsCrud from '../assets/images/shipments-crud.jpg';
-import PriceCalculate from '../assets/images/price_calculate.png';
-import Weather from '../assets/images/weather.png';
+import Coral from '../assets/images/project-restaurant.webp';
+import ShipmentsCrud from '../assets/images/project-shipments.webp';
+import PriceCalculate from '../assets/images/project-price-calculate.webp';
+import Weather from '../assets/images/project-weather.webp';
 
 export const icons = [react, redux, html, node, js, css, git, figma, wordpress];
 

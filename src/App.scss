@@ -4,17 +4,41 @@
 $navbar-height: 60px;
 #root {
   width: 100%;
-  max-width: 1400px;
+  max-width: none;
   margin: 0 auto;
   text-align: center;
-  background-color: inherit;
-  background-color: $dark;
+  background-color: transparent;
   overflow-x: clip;
+  position: relative;
+  z-index: 1;
 }
+
+body {
+  background-color: $dark;
+}
+
 .main_container {
   width: 100%;
   min-height: calc(100vh - $navbar-height);
   margin-top: $navbar-height;
+}
+
+.route_content {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding-top: 1.5rem;
+}
+
+.page_title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1600px) and (min-height: 800px) {
+  .route_content {
+    justify-content: center;
+  }
 }
 
 a {
@@ -27,6 +51,16 @@ a:hover,
 a:active {
   color: $accent;
   animation: grow_txt 1s linear 0s infinite alternate;
+}
+
+.navbar-brand {
+  transition: transform 180ms ease, color 180ms ease;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+  animation: none;
+  transform: scale(1.02);
 }
 
 @keyframes grow_txt {
