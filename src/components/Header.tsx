@@ -56,7 +56,7 @@ export const Header: FC = () => {
               onClick={closeMenu}
               className={`nav-link ${isMeActive ? 'active' : ''}`}
             >
-              ME
+              HOME
             </Nav.Link>
 
             <Nav.Link as={NavLink} to='/about' onClick={closeMenu}>

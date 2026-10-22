@@ -37,10 +37,10 @@ export const HomePage: FC = () => {
             thoughtful UX, and consistent design systems.
           </p>
           <div className='d-flex flex-wrap gap-3 mb-4'>
-            <Link className='btn btn-outline-accent btn-lg' to='/projects'>
+            <Link className='btn btn-accent btn-lg fw-bold' to='/projects'>
               Explore my work
             </Link>
-            <Link className='btn btn-outline-accent btn-lg' to='/contacts'>
+            <Link className='btn btn-secondary btn-lg fw-bold' to='/contacts'>
               Let’s talk
             </Link>
           </div>
