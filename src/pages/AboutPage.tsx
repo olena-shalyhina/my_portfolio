@@ -27,7 +27,7 @@ const languages = [
 
 const experience = [
   {
-    title: 'Career break',
+    title: 'Independent Full-Stack Developer',
     dates: 'May 2026 – Present',
     description:
       'Focused on professional development and building an independent full-stack language-learning application.',
@@ -38,7 +38,7 @@ const experience = [
     dates: 'Mar 2025 – Apr 2026 · Tallinn',
   },
   {
-    title: 'Career break',
+    title: 'Independent Developer',
     dates: 'Apr 2024 – Feb 2025',
     description:
       'Focused on frontend development, personal projects, and strengthening my technical skills while preparing for my next professional opportunity.',
@@ -84,7 +84,11 @@ export const AboutPage: FC = () => {
                 <div className='about_certificates h-100 p-3 rounded-3 border border-secondary'>
                   <h6 className='text-accent pb-2'>CERTIFICATES</h6>
                   <div className='d-flex gap-3 justify-content-center my-4'>
-                    <a href={EnglishFull} target='_blank' rel='noopener noreferrer'>
+                    <a
+                      href={EnglishFull}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
                       <img
                         src={English}
                         alt='Certificate English B1'
@@ -94,7 +98,11 @@ export const AboutPage: FC = () => {
                         decoding='async'
                       />
                     </a>
-                    <a href={ReactFull} target='_blank' rel='noopener noreferrer'>
+                    <a
+                      href={ReactFull}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
                       <img
                         src={React}
                         alt='Certificate React'
