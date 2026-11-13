@@ -9,9 +9,10 @@ import redux from '../assets/icons/redux.svg';
 import figma from '../assets/icons/figma.svg';
 import wordpress from '../assets/icons/wordpress.svg';
 import Coral from '../assets/images/project-restaurant.webp';
-import ShipmentsCrud from '../assets/images/project-shipments.webp';
+// import ShipmentsCrud from '../assets/images/project-shipments.webp';
 import PriceCalculate from '../assets/images/project-price-calculate.webp';
 import Weather from '../assets/images/project-weather.webp';
+import LanguagePlanet from '../assets/images/language_planet.png';
 
 export const icons = [react, redux, html, node, js, css, git, figma, wordpress];
 
@@ -41,6 +42,25 @@ export const skills = [
 
 export const projects: IProject[] = [
   {
+    name: 'My Language Planet',
+    img: LanguagePlanet,
+    skills: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'React Router',
+      'Material UI',
+      'Node.js',
+      'Express',
+      'Supabase',
+      'PostgreSQL',
+      'Axios',
+      'i18next',
+    ],
+    linkPreview: 'https://language-planet-mu.vercel.app/training',
+    linkGH: 'https://github.com/olena-shalyhina',
+  },
+  {
     name: 'Restaurant React',
     img: Coral,
     skills: [
@@ -66,17 +86,17 @@ export const projects: IProject[] = [
   },
 
   {
-    name: 'Shipments Crud Page',
-    img: ShipmentsCrud,
-    skills: ['React', 'Redux', 'Redux Thunk', 'React Bootstrap', 'Axios'],
-    linkPreview: 'https://olena-shalyhina.github.io/shipments_crud_page',
-    linkGH: 'https://github.com/olena-shalyhina/shipments_crud_page',
-  },
-  {
     name: 'Weather App',
     img: Weather,
     skills: ['React', 'Axios', 'HTML', 'CSS'],
     linkPreview: 'https://olena-shalyhina.github.io/weather-app/',
     linkGH: ' https://github.com/olena-shalyhina/weather-app',
   },
+  // {
+  //   name: 'Shipments Crud Page',
+  //   img: ShipmentsCrud,
+  //   skills: ['React', 'Redux', 'Redux Thunk', 'React Bootstrap', 'Axios'],
+  //   linkPreview: 'https://olena-shalyhina.github.io/shipments_crud_page',
+  //   linkGH: 'https://github.com/olena-shalyhina/shipments_crud_page',
+  // },
 ];

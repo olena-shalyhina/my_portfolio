@@ -25,7 +25,7 @@ export const HomePage: FC = () => {
             decoding='async'
           />
         </div>
-        <div className='col-12 col-lg-7 offset-lg-1 text-start'>
+        <div className='col-12 col-lg-7 offset-lg-1 text-start gap-3 gap-lg-1 gap-xl-4 d-flex flex-column justify-content-center'>
           <p className='text-secondary fs-3 fw-semibold mb-3'>Welcome! I’m</p>
           <h1 className='home_title page_title display-3 fw-bold text-light lh-1 mb-4'>
             Frontend &amp; <span className='text-primary'>Mobile Software</span>{' '}
@@ -36,13 +36,23 @@ export const HomePage: FC = () => {
             React, React Native, and TypeScript — combining clean code,
             thoughtful UX, and consistent design systems.
           </p>
-          <div className='d-flex flex-wrap gap-3 mb-4'>
-            <Link className='btn btn-accent btn-lg fw-bold' to='/projects'>
-              Explore my work
-            </Link>
-            <Link className='btn btn-secondary btn-lg fw-bold' to='/contacts'>
-              Let’s talk
-            </Link>
+          <div className='row g-4 g-md-5 g-lg-4 mb-4'>
+            <div className='col-12 col-sm-6 col-xl-4'>
+              <Link
+                className='btn btn-accent btn-lg fw-bold w-100'
+                to='/projects'
+              >
+                Explore my work
+              </Link>
+            </div>
+            <div className='col-12 col-sm-6 col-xl-4'>
+              <Link
+                className='btn btn-secondary btn-lg fw-bold w-100'
+                to='/contacts'
+              >
+                Let’s talk
+              </Link>
+            </div>
           </div>
           <ul className='home_badges list-unstyled d-flex flex-wrap gap-3 gap-lg-3 mb-4'>
             {badges.map((badge) => (
