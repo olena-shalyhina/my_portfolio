@@ -3,7 +3,7 @@ import { onSubmit } from '../utils/sendEmail';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Location from '../assets/icons/location.svg';
-import CV from '..//assets/files/CV Olena Shalyhina Front-end.pdf';
+import CV from '..//assets/files/Frontend & Mobile Software Engineer.pdf';
 import '../styles/contactsPage.scss';
 
 export const ContactsPage: FC = () => {
